@@ -1,0 +1,89 @@
+@import '../../../common/util/variables';
+
+@mixin Button($bg) {
+  background: $bg;
+  margin: 2%;
+  border-radius: $border-radius-1;
+  box-shadow: 0 1px 10px $bg;
+  border: $bg;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: $bg;
+    background: $bg;
+    box-shadow: 0 1px 10px $bg;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.cta {
+  &__roles {
+    p {
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    background: $color-primary-6;
+    padding: 4rem;
+    border-radius: $border-radius-3;
+    margin-bottom: 5%;
+
+    a {
+      text-decoration: none;
+      color: $text-color-dark;
+    }
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10%;
+
+      button {
+        font-family: $font-family-primary;
+        font-weight: 500;
+        transition: transform ease-in 0.1s;
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+      @media screen and (max-width: $screen-sm) {
+        text-align: center;
+
+        button {
+          margin-bottom: 5%;
+        }
+      }
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+
+  &__freelance-links {
+    margin: 5%;
+
+    h2 {
+      text-align: center;
+    }
+
+    .upwork {
+      @include Button(#6fda44);
+    }
+
+    .pph {
+      @include Button(#f5f7fa);
+    }
+
+    .freelancer {
+      @include Button(#ffffff);
+    }
+  }
+}

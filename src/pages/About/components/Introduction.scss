@@ -1,0 +1,79 @@
+@import '../../../common/util/variables';
+
+@mixin btn($bg) {
+  background: $bg;
+  border: none;
+
+  &:hover {
+    background: lighten($bg, 10%);
+  }
+  min-width: 6rem;
+  margin: 0.5rem;
+}
+
+.introduction {
+  margin: 5%;
+
+  &__img {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius-4;
+      margin-top: -20%;
+    }
+  }
+
+  &__short {
+    &__email {
+      background: $color-primary-4;
+      padding: 0.2rem 0.7rem;
+      border-radius: $border-radius-4;
+      cursor: pointer;
+
+      &:hover {
+        background: lighten($color-primary-4, 20%);
+      }
+    }
+
+    &__links {
+      margin: 10%;
+      margin-left: 0;
+
+      .work {
+        @include btn($color-primary-1);
+      }
+      .blogs {
+        @include btn($color-primary-7);
+      }
+      .contact {
+        @include btn($color-primary-6);
+      }
+      .profiles {
+        @include btn($color-primary-4);
+      }
+    }
+
+    &__social {
+      .social-icon {
+        font-size: 2rem;
+        margin: 0 2%;
+        &:hover {
+          color: darken($text-color-light, 15%);
+        }
+      }
+    }
+  }
+
+  &__brief {
+    a {
+      color: $color-primary-1;
+      &:hover {
+        color: darken($color-primary-1, 15%);
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-xs) {
+    text-align: center;
+  }
+}

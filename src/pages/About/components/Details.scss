@@ -1,0 +1,98 @@
+@use '../../../common/util/mixins';
+@import '../../../common/util/variables';
+
+.details {
+  margin: 5%;
+
+  &__techs {
+    &__title {
+      color: $color-primary-8;
+      @media screen and (max-width: $screen-sm) {
+        text-align: center;
+      }
+    }
+
+    &__container {
+      margin-top: 5%;
+      max-height: 20rem;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding: 0 1rem;
+      @include mixins.scrollbar($color-primary-8);
+    }
+  }
+
+  &__skills {
+    &__title {
+      color: $color-primary-1;
+      @media screen and (max-width: $screen-sm) {
+        text-align: center;
+      }
+    }
+
+    &__container {
+      text-align: center;
+      .row {
+        margin: 3%;
+        padding: 2rem;
+        align-items: center;
+        background: $color-secondary-2;
+        border-radius: $border-radius-2;
+      }
+    }
+
+    .progress-bar {
+      background-color: $color-primary-1;
+    }
+  }
+
+  &__achievements {
+    &__title {
+      color: $color-primary-6;
+      @media screen and (max-width: $screen-sm) {
+        text-align: center;
+      }
+    }
+
+    &__container {
+      margin: 5%;
+      &__achievement {
+        .title {
+          text-decoration: underline $color-primary-6;
+          @media screen and (max-width: $screen-sm) {
+            text-align: center;
+          }
+        }
+        .hackathon-card {
+          margin-top: 2%;
+          padding: 2rem;
+          background: $color-secondary-2;
+          border-radius: $border-radius-2;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.tech-card {
+  max-width: 6rem;
+  max-height: 7rem;
+  min-width: 7rem;
+  min-height: 7rem;
+  padding: 1.5rem;
+  margin: 2%;
+  text-align: center;
+  background: lighten($color-secondary-6, 7%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  border-radius: $border-radius-1;
+
+  img {
+    width: 80%;
+    height: auto;
+  }
+
+  h6 {
+    font-size: 0.7rem;
+  }
+}

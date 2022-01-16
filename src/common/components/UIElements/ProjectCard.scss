@@ -1,0 +1,94 @@
+@import '../../util/variables';
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    border-radius: $border-radius-1;
+    height: 12rem;
+    overflow: hidden;
+
+    @media screen and (min-width: $screen-md) {
+      height: 20rem;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      height: 17rem;
+    }
+
+    .placeholder {
+      height: 15rem;
+      border-radius: $border-radius-1;
+      @media (max-width: $screen-sm) {
+        height: 10rem;
+      }
+      @media (max-width: $screen-xs) {
+        height: 20rem;
+      }
+      @media (max-width: $screen-xss) {
+        height: 15rem;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius-1;
+      object-fit: cover;
+    }
+  }
+
+  &__details {
+    margin-top: 5%;
+    .row:first-child {
+      display: flex;
+      align-items: center;
+    }
+
+    &__tech-stack {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0.5rem 0.2rem;
+      border-radius: $border-radius-2;
+      background: $color-primary-4;
+      img {
+        width: 10%;
+        height: auto;
+
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        @media screen and (max-width: $screen-sm) {
+          width: 20%;
+        }
+      }
+
+      .placeholder {
+        background: $color-primary-4;
+      }
+    }
+
+    &__links {
+      width: 100%;
+      text-align: center;
+
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+
+      a {
+        text-decoration: none;
+        color: $text-color-light;
+        &:hover {
+          color: darken($text-color-light, 20%);
+        }
+      }
+
+      .icon {
+        float: left;
+      }
+    }
+  }
+}

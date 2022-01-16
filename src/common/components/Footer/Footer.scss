@@ -1,0 +1,57 @@
+@import '../../util/variables';
+
+#footer {
+  background: $color-secondary-6;
+}
+
+footer {
+  margin: auto 7% 0 7%;
+  padding: 4rem 2rem;
+
+  @media screen and (max-width: $screen-xss) {
+    padding: 4rem 1rem;
+  }
+
+  .visits {
+    background: $color-primary-8;
+    color: $text-color-dark;
+    padding: 0.2rem 0.5rem;
+    border-radius: $border-radius-1;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  .social-icon {
+    font-size: 2rem;
+    margin: 0 2%;
+    &:hover {
+      color: darken($text-color-light, 15%);
+    }
+  }
+
+  .feedback {
+    &__icon {
+      float: left;
+    }
+  }
+
+  button {
+    @media screen and (max-width: $screen-xs) {
+      margin: 5% auto;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    text-align: center;
+    .feedback {
+      margin: 5% auto;
+    }
+  }
+
+  .end-text {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}

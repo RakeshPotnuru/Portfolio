@@ -1,0 +1,45 @@
+@use '../../../common/util/mixins';
+@import '../../../common/util/variables';
+
+.blog-preview {
+  width: 100%;
+  background: $color-secondary-6;
+  min-height: 15rem;
+  max-height: 15rem;
+  background-position: right;
+  background-size: cover;
+  overflow-y: scroll;
+
+  @include mixins.scrollbar(lighten($color-secondary-2, 5%));
+
+  @media screen and (max-width: $screen-sm) {
+    overflow-y: scroll;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    min-height: 25rem;
+    max-height: 25rem;
+  }
+
+  &__details {
+    padding: 2.5rem;
+
+    &__description {
+      margin: 2% auto 2% 0;
+      max-width: 65ch;
+    }
+
+    &__links {
+      &__extra {
+        .icon {
+          font-size: 2rem;
+          cursor: pointer;
+
+          &:hover {
+            color: darken($color-secondary-1, 10%);
+          }
+        }
+      }
+    }
+  }
+}

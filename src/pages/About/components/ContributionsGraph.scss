@@ -1,0 +1,44 @@
+@use '../../../common/util/mixins';
+@import '../../../common/util/variables';
+
+.contributions-graph {
+  margin: 5%;
+
+  h2 {
+    color: $color-primary-7;
+    @media screen and (max-width: $screen-sm) {
+      text-align: center;
+    }
+  }
+
+  .calendar {
+    border: none;
+    background: $color-secondary-2;
+    border-radius: $border-radius-2;
+    padding: 2rem;
+    margin: 2%;
+    .border,
+    .contrib-column {
+      border: none !important;
+      @media screen and (max-width: $screen-sm) {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .contrib-number {
+      color: $text-color-light !important;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      .overflow-hidden {
+        overflow-x: scroll !important;
+        &::-webkit-scrollbar {
+          height: 0.7rem;
+        }
+
+        @include mixins.scrollbar($color-primary-7);
+      }
+    }
+  }
+}

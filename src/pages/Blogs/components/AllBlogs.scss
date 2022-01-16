@@ -1,0 +1,20 @@
+@import '../../../common/util/variables';
+
+.blog-preview {
+  z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.all-blogs {
+  margin: 5%;
+  min-height: 100vh;
+
+  &__load-more {
+    display: flex;
+    justify-content: center;
+  }
+}

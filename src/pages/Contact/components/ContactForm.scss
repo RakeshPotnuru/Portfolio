@@ -1,0 +1,40 @@
+@import '../../../common/util/variables';
+
+#contact-form {
+  background: $color-primary-5;
+  min-height: 100vh;
+}
+
+.contact-form {
+  margin: auto 7%;
+  padding-top: 12%;
+
+  label {
+    color: $color-secondary-4;
+  }
+
+  .form-control {
+    background-color: $color-secondary-2 !important;
+    border: none;
+    color: $text-color-light !important;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+
+  button {
+    background: $color-primary-6;
+    border: none;
+
+    position: relative;
+    float: right;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $color-primary-6;
+      box-shadow: none !important;
+    }
+  }
+}

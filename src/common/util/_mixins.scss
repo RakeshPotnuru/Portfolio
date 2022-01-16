@@ -1,0 +1,16 @@
+@import './variables';
+
+@mixin scrollbar($bg) {
+  &::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px $bg;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: $border-radius-1;
+    background-color: $bg;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../util/variables';
+
+button {
+  border: none;
+  transition: transform ease-in 0.1s;
+
+  font-family: inherit;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.03);
+    box-shadow: none;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}

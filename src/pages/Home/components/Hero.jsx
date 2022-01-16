@@ -1,0 +1,106 @@
+import React, { useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import Typist from 'react-typist';
+import {
+  FaTwitter,
+  FaGithub,
+  FaMedium,
+  AiOutlineMail,
+  HiDownload,
+  AiOutlineLink
+} from 'react-icons/all';
+import { Link } from 'react-router-dom';
+
+import { AnimatedButton } from '../../../common/components/UIElements';
+import { Avatar } from '../../../assets/images';
+import Resume from '../../../assets/documents/resume.pdf';
+import 'react-typist/dist/Typist.css';
+import './Hero.scss';
+
+const words = ['web developer', 'technical writer', 'oss contributor'];
+
+const Hero = () => {
+  const [count, setCount] = useState(1);
+
+  useEffect(() => {
+    setCount(1);
+  }, [count]);
+
+  return (
+    <div id="hero">
+      <Container>
+        <div className="hero">
+          <Row>
+            <Col sm className="hero__content">
+              <div>
+                <p>Hey!</p>
+                <h1>
+                  <span className="hero__content__title">
+                    <span className="hero__content__title-first">I'm</span>{' '}
+                    <span className="hero__content__title-second">
+                      &nbsp;Rakesh
+                    </span>
+                  </span>
+                </h1>
+                <h2>
+                  <div className="type-writer">
+                    {count ? (
+                      <Typist onTypingDone={() => setCount(0)}>
+                        {words.map((word) => [
+                          <span>{word}</span>,
+                          <Typist.Backspace count={word.length} delay={1000} />
+                        ])}
+                      </Typist>
+                    ) : (
+                      ''
+                    )}
+                  </div>
+                </h2>
+                <p>I have a passion for technology.</p>
+                <p>
+                  <Link style={{ color: '#FF5403' }} to="/about">
+                    Know More <AiOutlineLink />
+                  </Link>{' '}
+                  about me
+                </p>
+                <p className="hero__content__social">
+                  Follow me{' '}
+                  <span className="hero__content__social-icons">
+                    <Link to="/profiles/twitter">
+                      <FaTwitter className="social-icon twitter" />
+                    </Link>
+                    <Link to="/profiles/github">
+                      <FaGithub className="social-icon github" />
+                    </Link>
+                    <Link to="/profiles/medium">
+                      <FaMedium className="social-icon medium" />
+                    </Link>
+                  </span>
+                </p>
+                <div className="hero__content__main-btns">
+                  <a href="mailto:rakesh@itsrakesh.co">
+                    <AnimatedButton>
+                      <AiOutlineMail className="main-btn" />
+                      &nbsp;Email&nbsp;Me
+                    </AnimatedButton>
+                  </a>
+                  <a href={Resume} target="_blank" rel="noopener noreferrer">
+                    <AnimatedButton outline className="ms-4">
+                      <HiDownload className="main-btn" />
+                      &nbsp;Download&nbsp;CV
+                    </AnimatedButton>
+                  </a>
+                </div>
+              </div>
+            </Col>
+            <Col sm className="hero__image">
+              <img id="hero-avatar" src={Avatar} alt="Rakesh Potnuru" />
+            </Col>
+          </Row>
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+export default Hero;

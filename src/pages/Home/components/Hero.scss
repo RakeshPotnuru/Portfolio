@@ -1,0 +1,69 @@
+@import '../../../common/util/variables';
+
+.hero {
+  margin: 5%;
+
+  &__content {
+    &__title-second {
+      color: $color-primary-1;
+    }
+    &__social-icons {
+      margin: auto 1%;
+      .social-icon {
+        font-size: 1.5rem;
+        margin: auto 1%;
+      }
+      .twitter:hover {
+        color: #1da1f2;
+      }
+      .github:hover,
+      .medium:hover {
+        color: #6e6e6e;
+      }
+      .linkedin:hover {
+        color: #0077b5;
+      }
+    }
+
+    &__main-btns {
+      button {
+        color: $text-color-light !important;
+        margin-top: 5%;
+      }
+    }
+
+    .type-writer {
+      height: 100%;
+      color: $color-primary-7;
+      .Typist .Cursor {
+        color: $color-primary-1;
+      }
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      text-align: center;
+    }
+  }
+
+  &__image {
+    transform: rotateY(180deg);
+    img {
+      margin-top: -20%;
+      width: 100%;
+      height: auto;
+      transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    .hero__image {
+      display: none;
+    }
+  }
+
+  // @media screen and (max-width: $screen-xs) {
+  //   .hero__image {
+  //     display: none;
+  //   }
+  // }
+}

@@ -1,0 +1,43 @@
+@import '../../util/variables';
+
+.hide-back-to-top {
+  display: none;
+}
+
+.back-to-top {
+  display: block;
+  &__icon {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+
+    color: $color-primary-3;
+    font-size: 3rem;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+    &:hover {
+      transform: rotate(180deg);
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      right: 2rem;
+      bottom: 8rem;
+    }
+    @media screen and (min-width: $screen-lg) {
+      bottom: 6rem;
+      right: 20rem;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

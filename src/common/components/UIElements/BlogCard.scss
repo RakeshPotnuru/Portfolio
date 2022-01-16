@@ -1,0 +1,48 @@
+@import '../../util/variables';
+
+.blog-card {
+  background: $color-secondary-2;
+  border-radius: $border-radius-1;
+  margin: 2%;
+  min-height: 18rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.64, 0.98);
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &:focus,
+  &:active {
+    transform: scale(1.02);
+  }
+
+  &__image {
+    .placeholder {
+      height: 10rem;
+      border-radius: $border-radius-1 $border-radius-1 0 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius-1 $border-radius-1 0 0;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  &__title {
+    min-height: 2.5rem;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: smaller;
+  }
+}

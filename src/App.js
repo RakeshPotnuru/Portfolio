@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from 'react-router-dom';
 
-function App() {
+import Navigation from './common/components/Navigation/Navigation';
+import Footer from './common/components/Footer/Footer';
+import { LoadingSpinner } from './common/components/UIElements/loadingAnimations';
+
+/**
+ * Lazy loading of components
+ */
+const Home = lazy(() => import('./pages/Home/Home'));
+const About = lazy(() => import('./pages/About/About'));
+const Blogs = lazy(() => import('./pages/Blogs/Blogs'));
+const Work = lazy(() => import('./pages/Work/Work'));
+const Contact = lazy(() => import('./pages/Contact/Contact'));
+const NotFound = lazy(() => import('./pages/404/404'));
+const ProfileRedirect = lazy(() =>
+  import('./features/ProfileRedirect/ProfileRedirect')
+);
+const Profiles = lazy(() => import('./pages/Profiles/Profiles'));
+const AllProjects = lazy(() => import('./pages/Work/projects/AllProjects'));
+const ProjectItem = lazy(() => import('./pages/Work/projects/ProjectItem'));
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Router>
+        <Navigation />
+        <React.Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blogs" element={<Blogs />} />
+
+            <Route path="/work" element={<Work />} />
+
+            <Route path="/work/projects" element={<AllProjects />} />
+            <Route path="/work/projects/:repoName" element={<ProjectItem />} />
+
+            <Route path="/profiles/:profile" element={<ProfileRedirect />} />
+            <Route path="/profiles" element={<Profiles />} />
+
+            <Route path="/404" element={<NotFound />} />
+            <Route path="*" element={<Navigate replace to="/404" />} />
+          </Routes>
+        </React.Suspense>
+        <Footer />
+      </Router>
+    </React.Fragment>
   );
-}
+};
 
 export default App;
