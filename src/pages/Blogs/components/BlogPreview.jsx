@@ -35,7 +35,7 @@ const BlogPreview = (props) => {
             </CustomButton>
           </a>
 
-          <p className="mt-2">Read this blog on your favourite platform:</p>
+          <h6 className="mt-2">Read this blog on your favourite platform:</h6>
           <div className="blog-preview__details__links__extra">
             <a
               href="https://medium.com/@itsrakesh"

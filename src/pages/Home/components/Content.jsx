@@ -37,22 +37,21 @@ const Content = (props) => {
       <div className="content">
         <Container>
           <Row className="content__container">
-            <Col className="content__container__image" sm>
+            <Col className="content__container__image" sm={12} md={6}>
               <img src={ProjectsIllustration} alt="Projects illustration" />
             </Col>
-            <Col className="content__container__details" sm>
+            <Col className="content__container__details" sm={12} md={6}>
               <div>
                 <h1>
                   <AnimatedCounter end={50} duration={1} />
                   <span style={{ color: '#8ED2A9' }}>+</span>
                 </h1>
-                <p>Completed projects</p>
+                <h6>Completed projects</h6>
                 <h2>Glad to help you!</h2>
                 <p>
-                  As a web developer, technical writer, and learner I am always
-                  looking for new challenges and opportunities to learn new
-                  things. I am always looking for projects that can help me
-                  improve my skills and knowledge.
+                  As a web developer, technical writer and a passionate learner,
+                  I'm always on the lookout for new challenges and opportunities
+                  to further improve my knowledge and skills.
                 </p>
               </div>
             </Col>
@@ -72,7 +71,7 @@ const Content = (props) => {
                 props.projects &&
                 props.projects.slice(0, 2).map((project, i) => {
                   return (
-                    <Col key={i} className="mt-5" sm>
+                    <Col key={i} className="mt-5" sm={12} md={6}>
                       <ProjectCard
                         title={project.title}
                         image={project.image}

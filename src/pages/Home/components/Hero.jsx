@@ -33,7 +33,7 @@ const Hero = () => {
           <Row>
             <Col sm className="hero__content">
               <div>
-                <p>Hey!</p>
+                <h6>Hey!</h6>
                 <h1>
                   <span className="hero__content__title">
                     <span className="hero__content__title-first">I'm</span>{' '}
@@ -63,7 +63,7 @@ const Hero = () => {
                   </Link>{' '}
                   about me
                 </p>
-                <p className="hero__content__social">
+                <h6 className="hero__content__social">
                   Follow me{' '}
                   <span className="hero__content__social-icons">
                     <Link to="/profiles/twitter">
@@ -76,7 +76,7 @@ const Hero = () => {
                       <FaMedium className="social-icon medium" />
                     </Link>
                   </span>
-                </p>
+                </h6>
                 <div className="hero__content__main-btns">
                   <a href="mailto:rakesh@itsrakesh.co">
                     <AnimatedButton>
@@ -87,7 +87,7 @@ const Hero = () => {
                   <a href={Resume} target="_blank" rel="noopener noreferrer">
                     <AnimatedButton outline className="ms-4">
                       <HiDownload className="main-btn" />
-                      &nbsp;Download&nbsp;CV
+                      &nbsp;Resume
                     </AnimatedButton>
                   </a>
                 </div>

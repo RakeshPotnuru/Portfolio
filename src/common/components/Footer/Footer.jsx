@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Row, Spinner } from 'react-bootstrap';
+import { Col, Row, Spinner, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import {
   FaTwitter,
@@ -36,13 +36,18 @@ const Footer = () => {
         <Row>
           <Col sm>
             <h1>Let's Connect</h1>
-            <p>
+            <h6>
               Visits:{' '}
-              <span className="visits">
-                {isLoading ? <Spinner animation="grow" size="sm" /> : visits}
-                {error && <span>{error}</span>}
-              </span>
-            </p>
+              <OverlayTrigger
+                placement="right"
+                overlay={<Tooltip>Times Viewed</Tooltip>}
+              >
+                <span className="visits">
+                  {isLoading ? <Spinner animation="grow" size="sm" /> : visits}
+                  {error && <span>{error}</span>}
+                </span>
+              </OverlayTrigger>
+            </h6>
           </Col>
           <Col sm>
             <Link to="/profiles/twitter">
@@ -59,14 +64,14 @@ const Footer = () => {
             </Link>
           </Col>
           <Col sm>
-            <Row>
+            <Row className="m-2">
               <Col>
                 <a
                   href="https://forms.gle/2mtF1kybEQQQVrRdA"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <CustomButton variant={'warning'} className="report">
+                  <CustomButton variant="warning">
                     <MdReport /> Report
                   </CustomButton>
                 </a>
@@ -77,16 +82,15 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <CustomButton variant={'primary'} className="feedback">
-                    <RiFeedbackFill className="feedback__icon mt-1" />
-                    Feedback
+                  <CustomButton variant="primary">
+                    <RiFeedbackFill /> Feedback
                   </CustomButton>
                 </a>
               </Col>
             </Row>
           </Col>
         </Row>
-        <p className="end-text mt-2">Made with 💖 by Me!</p>
+        <h6 className="end-text mt-2">Made with 💖 by Me!</h6>
       </footer>
     </div>
   );

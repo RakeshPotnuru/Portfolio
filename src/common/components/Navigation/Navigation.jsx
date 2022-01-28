@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+import { Logo } from '../../../assets/images';
 import './Navigation.scss';
 
 const Navigation = () => {
@@ -11,9 +12,11 @@ const Navigation = () => {
 
   return (
     <nav id="navbar">
-      <h2 className="nav__brand">
-        <Link to="/">its rakesh</Link>
-      </h2>
+      <div className="nav__brand">
+        <Link to="/">
+          <img src={Logo} alt="itsrakesh logo" />
+        </Link>
+      </div>
       <div className="nav__btn">
         <input
           type="checkbox"

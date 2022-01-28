@@ -8,7 +8,7 @@ const ProfileCard = (props) => {
   return (
     <Link to={`/profiles/${props.name}`}>
       <div className="profiles__container__card">
-        <p>{props.name}</p>
+        <h7>{props.name}</h7>
       </div>
     </Link>
   );
@@ -20,7 +20,7 @@ const Profiles = () => {
       <Container>
         <div className="profiles">
           <h1>My Profiles</h1>
-          <p>You can find me on the internet with url:</p>
+          <h6>You can find me on the internet with url:</h6>
           <p>https://itsrakesh.co/profiles/&lt;websitename&gt;</p>
           <p>
             For example:{' '}
@@ -30,6 +30,7 @@ const Profiles = () => {
           </p>
           <div className="profiles__container">
             <ProfileCard name="Twitter" />
+            <ProfileCard name="Showwcase" />
             <ProfileCard name="LinkedIn" />
             <ProfileCard name="Github" />
             <ProfileCard name="Medium" />

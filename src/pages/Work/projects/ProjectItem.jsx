@@ -45,6 +45,15 @@ const ProjectItem = () => {
         error={error}
       />
       <Container>
+        <h2>Project Details</h2>
+        <em>
+          <span style={{ color: 'red' }}>*</span> This page is the README file
+          of{' '}
+          <a href={`https://github.com/RakeshPotnuru/${repoName}`}>
+            {repoName}
+          </a>{' '}
+          Github repository.
+        </em>
         {isLoading && <LoadingSpinner />}
         {!isLoading && (
           <div className="project-item">

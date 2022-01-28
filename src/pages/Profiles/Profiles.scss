@@ -21,12 +21,14 @@
       }
     }
     &__card {
-      background: rgba(255, 255, 255, 0.25);
-      box-shadow: 0 8px 32px 0 rgba(26, 23, 23, 0.37);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      background-image: linear-gradient(
+        to right,
+        #4776e6 0%,
+        #8e54e9 50%,
+        #4776e6 100%
+      );
+      border-radius: $border-radius-1;
+      transition: 0.5s;
       padding: 1rem;
       margin: 2%;
 
@@ -36,7 +38,12 @@
       text-align: center;
 
       &:hover {
-        background: rgba(255, 255, 255, 0.5);
+        background-image: linear-gradient(
+          to right,
+          #4776e6 0%,
+          #8e54e9 70%,
+          #4776e6 100%
+        );
       }
 
       p {

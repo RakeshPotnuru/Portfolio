@@ -23,8 +23,12 @@
 
 .cta {
   &__roles {
-    p {
+    h6 {
       cursor: pointer;
+    }
+
+    li {
+      color: #8a94a6;
     }
   }
 

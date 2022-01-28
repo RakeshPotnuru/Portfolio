@@ -85,13 +85,13 @@ const CTA = () => {
           </Row>
         </div>
         <div className="cta__roles my-5">
-          <p
+          <div
             onClick={() => setOpen(!open)}
             aria-controls="collapse-text"
             aria-expanded={open}
           >
             <IoIosArrowDropdownCircle /> I am open to
-          </p>
+          </div>
           <hr />
           <Collapse in={open}>
             <div id="collapse-text">

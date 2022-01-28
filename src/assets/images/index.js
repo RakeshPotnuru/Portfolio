@@ -7,3 +7,4 @@ export { default as Upwork } from './upwork.svg';
 export { default as PeoplePerHour } from './peopleperhour.svg';
 export { default as Freelancer } from './freelancer.svg';
 export { default as Avatar } from './avatar.png';
+export { default as Logo } from './logo.png';

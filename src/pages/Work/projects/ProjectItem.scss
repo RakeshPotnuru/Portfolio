@@ -1,6 +1,14 @@
 @use '../../../common/util/mixins';
 @import '../../../common/util/variables';
 
+em a {
+  color: $color-primary-1;
+
+  &:hover,
+  &:focus {
+    color: lighten($color-primary-1, 10%);
+  }
+}
 .project-item {
   margin: 5%;
 
@@ -11,7 +19,6 @@
 
   a {
     color: $color-primary-1;
-    font-family: $font-family-primary;
 
     &:hover,
     &:focus {

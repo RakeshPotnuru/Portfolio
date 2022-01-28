@@ -83,11 +83,11 @@ const Details = () => {
                 </VisibilitySensor>
               </Col>
             </Row>
-            <p>
+            <em>
               <span style={{ color: 'red' }}>* </span>Percentage represents my
               level of proficiency in that skill. Remaining percentage shows how
               much I need to improve or learn.
-            </p>
+            </em>
           </div>
         </div>
         <div className="details__achievements mt-5">
@@ -111,7 +111,7 @@ const Details = () => {
                   </Col>
                 </Row>
               </div>
-              <p className="mt-2">See my hackathon achievements on:</p>
+              <h6 className="m-4">See my hackathon achievements on:</h6>
               <div className="hackathon-links">
                 <Row>
                   <Col className="text-center">
@@ -133,7 +133,7 @@ const Details = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="support">
           <h2>Want to support me?</h2>
           <p>Share this website to FOUR people you know.</p>
         </div>

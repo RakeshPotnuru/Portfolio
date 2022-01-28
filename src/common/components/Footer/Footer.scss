@@ -31,10 +31,8 @@ footer {
     }
   }
 
-  .feedback {
-    &__icon {
-      float: left;
-    }
+  button {
+    white-space: nowrap;
   }
 
   button {

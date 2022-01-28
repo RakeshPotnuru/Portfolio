@@ -28,7 +28,7 @@ const Introduction = () => {
                 </p>
               </div>
               <div>
-                <p>Email Me</p>
+                <h6>Email Me</h6>
                 <a href="mailto:rakesh@itsrakesh.co">
                   <span className="introduction__short__email">
                     rakesh@itsrakesh.co
@@ -60,7 +60,7 @@ const Introduction = () => {
                 </Row>
               </div>
               <div className="introduction__short__social">
-                <p>Follow me on</p>
+                <h6>Follow me on</h6>
                 <div>
                   <Link to="/profiles/twitter">
                     <FaTwitter className="social-icon" />

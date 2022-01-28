@@ -114,19 +114,22 @@ const ContactForm = () => {
           aria-labelledby="contained-modal-title-vcenter"
           centered
         >
-          <Modal.Header closeButton>
+          <Modal.Header closeButton closeVariant="white">
             <Modal.Title id="contained-modal-title-vcenter">
               Message sent successfully!
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p>
+            <h6>
               Thank you for contacting me! I will get back to you as soon as
               possible.
-            </p>
+            </h6>
           </Modal.Body>
           <Modal.Footer>
-            <CustomButton onClick={() => setShowModal(false)}>
+            <CustomButton
+              variant="secondary"
+              onClick={() => setShowModal(false)}
+            >
               Close
             </CustomButton>
           </Modal.Footer>
@@ -136,7 +139,7 @@ const ContactForm = () => {
             <Row>
               <Col sm>
                 <h1>I'd love to hear from you</h1>
-                <p>My DMs are always open</p>
+                <h6>My DMs are always open</h6>
               </Col>
               <Col sm className="mt-2">
                 <Form noValidate onSubmit={formSubmitHandler}>
