@@ -1,3 +1,4 @@
+@use '../../../common/util/mixins';
 @import '../../../common/util/variables';
 
 @mixin Button($bg) {
@@ -22,16 +23,6 @@
 }
 
 .cta {
-  &__roles {
-    h6 {
-      cursor: pointer;
-    }
-
-    li {
-      color: #8a94a6;
-    }
-  }
-
   &__content {
     background: $color-primary-6;
     padding: 4rem;
@@ -88,6 +79,14 @@
 
     .freelancer {
       @include Button(#ffffff);
+    }
+  }
+
+  &__roles {
+    @include mixins.anchor($color-primary-1);
+
+    li {
+      color: #8a94a6;
     }
   }
 }

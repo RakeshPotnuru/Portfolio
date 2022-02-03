@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import anime from 'animejs';
 
 import {
   BlogCard,
@@ -60,6 +61,13 @@ const AllBlogs = (props) => {
       blogUrl: canonical_url,
       devUrl: url,
       mediumUrl: slug
+    });
+
+    anime({
+      targets: '.blog-preview',
+      duration: 500,
+      easing: 'easeInOutQuad',
+      opacity: [0, 1]
     });
   };
 

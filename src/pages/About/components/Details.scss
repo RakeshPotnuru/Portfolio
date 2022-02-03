@@ -73,6 +73,10 @@
       }
     }
   }
+
+  .support {
+    @include mixins.anchor($color-primary-1);
+  }
 }
 
 .tech-card {

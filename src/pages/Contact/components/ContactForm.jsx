@@ -6,12 +6,44 @@ import {
   Row,
   Col,
   Spinner,
-  Modal
+  Modal,
+  Stack
 } from 'react-bootstrap';
+import { Calendly } from '.';
 
 import { CustomButton } from '../../../common/components/UIElements';
 import useHttpHook from '../../../common/hooks/http-hook';
 import './ContactForm.scss';
+
+const Input = ({
+  label,
+  type,
+  name,
+  value,
+  onChange,
+  placeholder,
+  error,
+  required,
+  controlId,
+  isInvalid,
+  ...props
+}) => {
+  return (
+    <FloatingLabel label={label} controlId={controlId} className="mb-3">
+      <Form.Control
+        type={type}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        isInvalid={isInvalid}
+        required={required}
+        {...props}
+      />
+      <Form.Control.Feedback type="invalid">{error}</Form.Control.Feedback>
+    </FloatingLabel>
+  );
+};
 
 const ContactForm = () => {
   const [formState, setFormState] = useState({
@@ -136,87 +168,79 @@ const ContactForm = () => {
         </Modal>
         <Container>
           <div className="contact-form">
-            <Row>
-              <Col sm>
-                <h1>I'd love to hear from you</h1>
-                <h6>My DMs are always open</h6>
-              </Col>
-              <Col sm className="mt-2">
-                <Form noValidate onSubmit={formSubmitHandler}>
-                  <FloatingLabel
-                    controlId="floatingInput"
-                    label="Name"
-                    className="mb-3"
-                  >
-                    <Form.Control
+            <h1>I'd love to hear from you</h1>
+            <Row className="mt-5">
+              <Col className="mt-2" sm>
+                <Stack gap={5}>
+                  <h4>Simply leave a message</h4>
+                  <Form noValidate onSubmit={formSubmitHandler}>
+                    <Input
+                      controlId="floatingInput"
+                      label="Name"
                       type="text"
-                      placeholder="Name"
                       name="name"
                       value={formState.name}
                       onChange={inputChangedHandler}
+                      placeholder="Name"
+                      error={errors.name}
                       required
                       isInvalid={!!errors.name}
                     />
-                    <Form.Control.Feedback type="invalid">
-                      {errors.name}
-                    </Form.Control.Feedback>
-                  </FloatingLabel>
 
-                  <FloatingLabel
-                    controlId="floatingPassword"
-                    label="Email"
-                    className="mb-3"
-                  >
-                    <Form.Control
+                    <Input
+                      controlId="floatingPassword"
+                      label="Email"
                       type="email"
-                      placeholder="Email"
                       name="email"
                       value={formState.email}
                       onChange={inputChangedHandler}
+                      placeholder="Email"
+                      error={errors.email}
                       required
                       isInvalid={!!errors.email}
                     />
-                    <Form.Control.Feedback type="invalid">
-                      {errors.email}
-                    </Form.Control.Feedback>
-                  </FloatingLabel>
 
-                  <FloatingLabel
-                    controlId="floatingTextarea2"
-                    label="Message"
-                    className="mb-3"
-                  >
-                    <Form.Control
+                    <Input
+                      controlId="floatingTextarea2"
+                      label="Message"
                       as="textarea"
-                      placeholder="Message"
                       name="message"
                       value={formState.message}
                       onChange={inputChangedHandler}
+                      placeholder="Message"
+                      error={errors.message}
                       required
                       isInvalid={!!errors.message}
                       style={{ height: '200px' }}
                     />
-                    <Form.Control.Feedback type="invalid">
-                      {errors.message}
-                    </Form.Control.Feedback>
-                  </FloatingLabel>
-                  <CustomButton type="submit">
-                    {isLoading ? (
-                      <>
-                        Loading{' '}
-                        <Spinner
-                          as="span"
-                          animation="border"
-                          size="sm"
-                          role="status"
-                          aria-hidden="true"
-                        />
-                      </>
-                    ) : (
-                      'Send Message'
-                    )}
-                  </CustomButton>
-                </Form>
+
+                    <CustomButton type="submit">
+                      {isLoading ? (
+                        <>
+                          Loading{' '}
+                          <Spinner
+                            as="span"
+                            animation="border"
+                            size="sm"
+                            role="status"
+                            aria-hidden="true"
+                          />
+                        </>
+                      ) : (
+                        'Send Message'
+                      )}
+                    </CustomButton>
+                  </Form>
+                </Stack>
+              </Col>
+              <Col sm>
+                <h2>Or</h2>
+              </Col>
+              <Col className="mt-2" sm>
+                <Stack gap={5}>
+                  <h4>Schedule a Google Meet with me!</h4>
+                  <Calendly />
+                </Stack>
               </Col>
             </Row>
           </div>

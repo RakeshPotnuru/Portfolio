@@ -1,3 +1,4 @@
+@use '../../../common/util/mixins';
 @import '../../../common/util/variables';
 
 .hero {
@@ -7,6 +8,11 @@
     &__title-second {
       color: $color-primary-1;
     }
+
+    .know-more {
+      @include mixins.anchor($color-primary-1);
+    }
+
     &__social-icons {
       margin: auto 1%;
       .social-icon {
@@ -60,10 +66,4 @@
       display: none;
     }
   }
-
-  // @media screen and (max-width: $screen-xs) {
-  //   .hero__image {
-  //     display: none;
-  //   }
-  // }
 }

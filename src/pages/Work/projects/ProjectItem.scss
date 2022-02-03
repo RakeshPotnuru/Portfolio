@@ -17,14 +17,7 @@ em a {
     height: auto;
   }
 
-  a {
-    color: $color-primary-1;
-
-    &:hover,
-    &:focus {
-      color: lighten($color-primary-1, 10%);
-    }
-  }
+  @include mixins.anchor($color-primary-1);
 
   pre {
     background: $color-secondary-2;

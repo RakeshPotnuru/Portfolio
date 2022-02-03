@@ -37,9 +37,7 @@ const Hero = () => {
                 <h1>
                   <span className="hero__content__title">
                     <span className="hero__content__title-first">I'm</span>{' '}
-                    <span className="hero__content__title-second">
-                      &nbsp;Rakesh
-                    </span>
+                    <span className="hero__content__title-second">Rakesh</span>
                   </span>
                 </h1>
                 <h2>
@@ -57,8 +55,8 @@ const Hero = () => {
                   </div>
                 </h2>
                 <p>I have a passion for technology.</p>
-                <p>
-                  <Link style={{ color: '#FF5403' }} to="/about">
+                <p className="know-more">
+                  <Link to="/about">
                     Know More <AiOutlineLink />
                   </Link>{' '}
                   about me

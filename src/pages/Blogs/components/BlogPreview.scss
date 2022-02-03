@@ -3,12 +3,12 @@
 
 .blog-preview {
   width: 100%;
-  background: $color-secondary-6;
   min-height: 15rem;
   max-height: 15rem;
   background-position: right;
   background-size: cover;
   overflow-y: scroll;
+  background: $color-secondary-6;
 
   @include mixins.scrollbar(lighten($color-secondary-2, 5%));
 
@@ -27,6 +27,8 @@
     &__description {
       margin: 2% auto 2% 0;
       max-width: 65ch;
+
+      color: $text-color-light;
     }
 
     &__links {

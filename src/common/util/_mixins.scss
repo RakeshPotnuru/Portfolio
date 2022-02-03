@@ -14,3 +14,13 @@
     background-color: $bg;
   }
 }
+
+@mixin anchor($color) {
+  a {
+    color: $color;
+    &:hover,
+    &:focus {
+      color: darken($color, 10%);
+    }
+  }
+}

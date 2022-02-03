@@ -101,7 +101,9 @@ const CTA = () => {
                 <li>Contract</li>
                 <li>Freelance</li>
                 <li>Remote</li>
-                <li>Full-time? - Let's talk</li>
+                <li>
+                  Full-time? - Let's <Link to="/contact">talk</Link>
+                </li>
                 <li>Other cool opportunities</li>
               </ul>
             </div>

@@ -1,3 +1,4 @@
+@use '../../common/util/mixins';
 @import '../../common/util/variables';
 
 #profiles {
@@ -6,20 +7,12 @@
 
 .profiles {
   text-align: center;
-  a {
-    color: $color-primary-1;
-    &:hover {
-      color: darken($color-primary-1, 10%);
-    }
-  }
+  @include mixins.anchor($color-primary-1);
+
   &__container {
     margin: auto 7%;
-    a {
-      color: $text-color-light;
-      &:hover {
-        color: darken($text-color-light, 10%);
-      }
-    }
+    @include mixins.anchor($text-color-light);
+
     &__card {
       background-image: linear-gradient(
         to right,

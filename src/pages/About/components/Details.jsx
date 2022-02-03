@@ -135,7 +135,10 @@ const Details = () => {
         </div>
         <div className="support">
           <h2>Want to support me?</h2>
-          <p>Share this website to FOUR people you know.</p>
+          <p>
+            I don't ask you to "buy me a coffee" instead follow me on{' '}
+            <Link to="/profiles">socials</Link> :).
+          </p>
         </div>
       </div>
     </Container>
