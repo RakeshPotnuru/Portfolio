@@ -5,7 +5,6 @@
   background: $bg;
   margin: 2%;
   border-radius: $border-radius-1;
-  box-shadow: 0 1px 10px $bg;
   border: $bg;
 
   &:hover,
@@ -13,7 +12,7 @@
   &:focus {
     border: $bg;
     background: $bg;
-    box-shadow: 0 1px 10px $bg;
+    box-shadow: none;
   }
 
   img {

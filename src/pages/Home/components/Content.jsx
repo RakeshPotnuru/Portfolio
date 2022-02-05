@@ -57,45 +57,43 @@ const Content = (props) => {
             </Col>
           </Row>
         </Container>
-        <Container>
-          <div className="content__recent-projects">
-            <div className="content__recent-projects__header">
-              <h2>Recent Projects</h2>
-              <Link to="/work/projects">
-                <AnimatedButton>View&nbsp;More</AnimatedButton>
-              </Link>
-            </div>
-            <Row>
-              {props.error}
-              {!props.isLoading &&
-                props.projects &&
-                props.projects.slice(0, 2).map((project, i) => {
-                  return (
-                    <Col key={i} className="mt-5" sm={12} md={6}>
-                      <ProjectCard
-                        title={project.title}
-                        image={project.image}
-                        repoName={project.repoName}
-                        liveUrl={project.liveUrl}
-                        techs={project.techs}
-                      />
-                    </Col>
-                  );
-                })}
-            </Row>
-            {props.isLoading && (
-              <Row>
-                {[...Array(2)].map((_, i) => {
-                  return (
-                    <Col key={i} className="mt-5" sm>
-                      <LoadingProjectCard />
-                    </Col>
-                  );
-                })}
-              </Row>
-            )}
+        <div className="content__recent-projects">
+          <div className="content__recent-projects__header">
+            <h2>Recent Projects</h2>
+            <Link to="/work/projects">
+              <AnimatedButton>View&nbsp;More</AnimatedButton>
+            </Link>
           </div>
-        </Container>
+          <Row>
+            {props.error}
+            {!props.isLoading &&
+              props.projects &&
+              props.projects.slice(0, 2).map((project, i) => {
+                return (
+                  <Col key={i} className="mt-5" sm={12} md={6}>
+                    <ProjectCard
+                      title={project.title}
+                      image={project.image}
+                      repoName={project.repoName}
+                      liveUrl={project.liveUrl}
+                      techs={project.techs}
+                    />
+                  </Col>
+                );
+              })}
+          </Row>
+          {props.isLoading && (
+            <Row>
+              {[...Array(2)].map((_, i) => {
+                return (
+                  <Col key={i} className="mt-5" sm>
+                    <LoadingProjectCard />
+                  </Col>
+                );
+              })}
+            </Row>
+          )}
+        </div>
         <Container>
           <div className="content__strengths">
             <h2 className="content__strengths__header">
