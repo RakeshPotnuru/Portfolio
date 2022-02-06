@@ -41,6 +41,7 @@ const ProjectItem = () => {
     <Fragment>
       <Helmet>
         <title>{repoName} | itsrakesh</title>
+        <meta name="description" content={`See my ${repoName} project`} />
         <meta property="og:title" content={repoName} />
         <meta
           property="og:description"

@@ -9,6 +9,10 @@ const Contact = () => {
     <React.Fragment>
       <Helmet>
         <title>Contact | itsrakesh</title>
+        <meta
+          name="description"
+          content="Leave a message or schedule a google meet."
+        />
         <meta property="og:title" content="Get in touch with Rakesh" />
         <meta
           property="og:description"

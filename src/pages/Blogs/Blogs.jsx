@@ -31,6 +31,10 @@ const Blogs = () => {
     <Fragment>
       <Helmet>
         <title>Blogs | itsrakesh</title>
+        <meta
+          name="description"
+          content="I write new technical blog every week. Check them out."
+        />
         <meta property="og:title" content="Rakesh's Blogs" />
         <meta
           property="og:description"

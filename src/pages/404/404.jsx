@@ -45,6 +45,10 @@ const NotFound = () => {
     <Fragment>
       <Helmet>
         <title>Page Not Found</title>
+        <meta
+          name="description"
+          content="The page you are looking for cannot be found."
+        />
         <meta property="og:title" content="Page Not Found" />
         <meta
           property="og:description"

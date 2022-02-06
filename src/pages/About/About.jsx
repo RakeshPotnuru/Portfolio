@@ -14,6 +14,7 @@ const About = () => {
     <React.Fragment>
       <Helmet>
         <title>About | itsrakesh</title>
+        <meta name="description" content="Know more about me." />
         <meta property="og:title" content="About Rakesh Potnuru" />
         <meta property="og:description" content="Know more about me." />
         <meta

@@ -25,14 +25,15 @@ const Work = () => {
     <Fragment>
       <Helmet>
         <title>Work | itsrakesh</title>
+        <meta name="description" content="Get to know what I do." />
         <meta property="og:title" content="Rakesh Potnuru's Work" />
-        <meta property="og:description" content="Know what I do." />
+        <meta property="og:description" content="Get to know what I do." />
         <meta
           property="og:image"
           content="https://ik.imagekit.io/itsrakesh/Portfolio/work_og_-rQyI1zUlf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644156172387"
         />
         <meta property="twitter:title" content="Rakesh Potnuru's Work" />
-        <meta property="twitter:description" content="Know what I do." />
+        <meta property="twitter:description" content="Get to know what I do." />
         <meta
           property="twitter:image"
           content="https://ik.imagekit.io/itsrakesh/Portfolio/work_og_-rQyI1zUlf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644156172387"

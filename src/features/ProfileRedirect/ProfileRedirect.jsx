@@ -33,6 +33,12 @@ const ProfileRedirect = () => {
           {profileLink ? `${profile} | itsrakesh` : 'Profile Not Found'}
         </title>
         <meta
+          name="description"
+          content={
+            profileLink ? `Follow me on ${profile}` : 'Profile Not Found'
+          }
+        />
+        <meta
           property="og:title"
           content={profileLink ? profile : 'Profile Not Found'}
         />

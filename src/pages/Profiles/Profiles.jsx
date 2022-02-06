@@ -20,6 +20,7 @@ const Profiles = () => {
     <Fragment>
       <Helmet>
         <title>Profiles | itsrakesh</title>
+        <meta name="description" content="Find me on internet." />
         <meta property="og:title" content="Rakesh's Profiles" />
         <meta property="og:description" content="Find me on internet." />
         <meta

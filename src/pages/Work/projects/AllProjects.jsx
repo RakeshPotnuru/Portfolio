@@ -31,6 +31,7 @@ const AllProjects = () => {
     <Fragment>
       <Helmet>
         <title>Projects | itsrakesh</title>
+        <meta name="description" content="See my projects" />
         <meta property="og:title" content="Rakesh's Projects" />
         <meta property="og:description" content="See my projects" />
         <meta
