@@ -16,7 +16,7 @@ const BlogCard = (props) => {
   return (
     <div className="blog-card" onClick={props.onClick}>
       <div className="blog-card__image">
-        <img src={props.imgUrl} alt={props.title} />
+        <img src={props.imgUrl} alt={props.title} loading="lazy" />
       </div>
       <div className="blog-card__content">
         <p className="blog-card__date">

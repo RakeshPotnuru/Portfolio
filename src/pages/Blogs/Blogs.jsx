@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
+import { Helmet } from 'react-helmet';
+
 import { AllBlogs } from './components';
 import useHttpClient from '../../common/hooks/http-hook';
 import { BackToTop } from '../../common/components/UIElements';
@@ -26,7 +28,28 @@ const Blogs = () => {
   };
 
   return (
-    <React.Fragment>
+    <Fragment>
+      <Helmet>
+        <title>Blogs | itsrakesh</title>
+        <meta property="og:title" content="Rakesh's Blogs" />
+        <meta
+          property="og:description"
+          content="I write new technical blog every week. Check them out."
+        />
+        <meta
+          property="og:image"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/blogs_og_9mlfm7Cx3h.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644157173894"
+        />
+        <meta property="twitter:title" content="Rakesh's Blogs" />
+        <meta
+          property="twitter:description"
+          content="I write new technical blog every week. Check them out."
+        />
+        <meta
+          property="twitter:image"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/blogs_og_9mlfm7Cx3h.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644157173894"
+        />
+      </Helmet>
       <AllBlogs
         blogs={blogs}
         isLoading={isLoading}
@@ -35,7 +58,7 @@ const Blogs = () => {
         show={show}
       />
       <BackToTop />
-    </React.Fragment>
+    </Fragment>
   );
 };
 

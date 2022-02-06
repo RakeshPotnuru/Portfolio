@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
+import { Helmet } from 'react-helmet';
 
 import { BackToTop } from '../../common/components/UIElements';
 import { Projects } from './components';
@@ -21,7 +22,22 @@ const Work = () => {
   }, [sendRequest]);
 
   return (
-    <React.Fragment>
+    <Fragment>
+      <Helmet>
+        <title>Work | itsrakesh</title>
+        <meta property="og:title" content="Rakesh Potnuru's Work" />
+        <meta property="og:description" content="Know what I do." />
+        <meta
+          property="og:image"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/work_og_-rQyI1zUlf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644156172387"
+        />
+        <meta property="twitter:title" content="Rakesh Potnuru's Work" />
+        <meta property="twitter:description" content="Know what I do." />
+        <meta
+          property="twitter:image"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/work_og_-rQyI1zUlf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644156172387"
+        />
+      </Helmet>
       <Projects
         projects={projects}
         isLoading={isLoading}
@@ -29,7 +45,7 @@ const Work = () => {
         show={show}
       />
       <BackToTop />
-    </React.Fragment>
+    </Fragment>
   );
 };
 

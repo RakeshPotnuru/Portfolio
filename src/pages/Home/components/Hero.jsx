@@ -12,7 +12,6 @@ import {
 import { Link } from 'react-router-dom';
 
 import { AnimatedButton } from '../../../common/components/UIElements';
-import { Avatar } from '../../../assets/images';
 import Resume from '../../../assets/documents/resume.pdf';
 import 'react-typist/dist/Typist.css';
 import './Hero.scss';
@@ -92,7 +91,12 @@ const Hero = () => {
               </div>
             </Col>
             <Col sm className="hero__image">
-              <img id="hero-avatar" src={Avatar} alt="Rakesh Potnuru" />
+              <img
+                id="hero-avatar"
+                src="https://ik.imagekit.io/itsrakesh/Portfolio/avatar_3PaiLNQSnTE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644134493976"
+                alt="Rakesh Potnuru"
+                loading="eager"
+              />
             </Col>
           </Row>
         </div>

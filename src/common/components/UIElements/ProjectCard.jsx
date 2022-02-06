@@ -24,7 +24,12 @@ const ProjectCard = (props) => {
     <div className="project-card">
       <Container>
         <Card bg="dark">
-          <Card.Img variant="top" src={props.image} />
+          <Card.Img
+            variant="top"
+            src={props.image}
+            alt={props.title}
+            loading="lazy"
+          />
           <Card.Body>
             <Row>
               <Col>
@@ -45,6 +50,7 @@ const ProjectCard = (props) => {
                           style={{ background: `${tech.bg}` }}
                           src={tech.url}
                           alt={tech.title}
+                          loading="lazy"
                         />
                       </OverlayTrigger>
                     ))}
@@ -54,7 +60,6 @@ const ProjectCard = (props) => {
             </Row>
           </Card.Body>
           <Card.Footer>
-            <hr />
             <Row className="project-card__links">
               <Col className="text-center">
                 <Link to={`/work/projects/${props.repoName}`}>

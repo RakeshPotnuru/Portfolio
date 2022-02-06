@@ -3,13 +3,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import {
-  Communicative,
-  Collaborative,
-  WorkEthic,
-  SelfMotivation,
-  ProjectsIllustration
-} from '../../../assets/images';
-import {
   AnimatedButton,
   ProjectCard,
   AnimatedCounter
@@ -21,7 +14,7 @@ const StrengthItem = (props) => {
   return (
     <div className="strengths__item">
       <div className="strengths__item__image">
-        <img src={props.image} alt={props.title} />
+        <img src={props.image} alt={props.title} loading="lazy" />
       </div>
       <div className="strengths__item__content">
         <h3>{props.title}</h3>
@@ -38,7 +31,11 @@ const Content = (props) => {
         <Container>
           <Row className="content__container">
             <Col className="content__container__image" sm={12} md={6}>
-              <img src={ProjectsIllustration} alt="Projects illustration" />
+              <img
+                src="https://ik.imagekit.io/itsrakesh/Portfolio/projects-illustration_dRQbe5kVkFw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644134494977"
+                alt="Projects illustration"
+                loading="lazy"
+              />
             </Col>
             <Col className="content__container__details" sm={12} md={6}>
               <div>
@@ -102,7 +99,7 @@ const Content = (props) => {
             <Row className="strengths">
               <Col sm={6} md={6} lg={3}>
                 <StrengthItem
-                  image={Communicative}
+                  image="https://ik.imagekit.io/itsrakesh/Portfolio/communicative_9gtXcXgTB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644134493404"
                   title="Communicative"
                   description="I balance talking and listening hence ensuring effective
                       communication."
@@ -110,7 +107,7 @@ const Content = (props) => {
               </Col>
               <Col sm={6} md={6} lg={3}>
                 <StrengthItem
-                  image={Collaborative}
+                  image="https://ik.imagekit.io/itsrakesh/Portfolio/collaborative_-lWdw0PUM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644134493423"
                   title="Collaborative"
                   description="Teamwork makes the dream work. Collaboration first, then
                       work."
@@ -118,15 +115,15 @@ const Content = (props) => {
               </Col>
               <Col sm={6} md={6} lg={3}>
                 <StrengthItem
-                  image={WorkEthic}
+                  image="https://ik.imagekit.io/itsrakesh/Portfolio/work-ethic_jaB_-v1Sr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644134495355"
                   title="Work Ethic"
                   description="I don't wait for deadlines, deadlines wait for me."
                 />
               </Col>
               <Col sm={6} md={6} lg={3}>
                 <StrengthItem
-                  image={SelfMotivation}
-                  title="Self Motivation"
+                  image="https://ik.imagekit.io/itsrakesh/Portfolio/self-motivation_PLXNT-6da.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644134495068"
+                  title="Self Motivated"
                   description="I put myself into action to achieve my goals."
                 />
               </Col>

@@ -1,10 +1,4 @@
-export { default as Communicative } from './communicative.png';
-export { default as Collaborative } from './collaborative.png';
-export { default as WorkEthic } from './work-ethic.png';
-export { default as SelfMotivation } from './self-motivation.png';
-export { default as ProjectsIllustration } from './projects-illustration.png';
 export { default as Upwork } from './upwork.svg';
 export { default as PeoplePerHour } from './peopleperhour.svg';
 export { default as Freelancer } from './freelancer.svg';
-export { default as Avatar } from './avatar.png';
 export { default as Logo } from './logo.png';

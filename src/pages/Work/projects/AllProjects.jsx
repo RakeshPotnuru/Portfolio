@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 
 import useHttpClient from '../../../common/hooks/http-hook';
 import {
@@ -27,7 +28,22 @@ const AllProjects = () => {
   }, [sendRequest]);
 
   return (
-    <>
+    <Fragment>
+      <Helmet>
+        <title>Projects | itsrakesh</title>
+        <meta property="og:title" content="Rakesh's Projects" />
+        <meta property="og:description" content="See my projects" />
+        <meta
+          property="og:image"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/projects__og_r2hbQSeQy0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644157173960"
+        />
+        <meta property="twitter:title" content="Rakesh's Projects" />
+        <meta property="twitter:description" content="See my projects" />
+        <meta
+          property="twitter:image"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/projects__og_r2hbQSeQy0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644157173960"
+        />
+      </Helmet>
       <ErrorModal
         show={show}
         onHide={() => setShow(false)}
@@ -74,7 +90,7 @@ const AllProjects = () => {
         </div>
         <BackToTop />
       </Container>
-    </>
+    </Fragment>
   );
 };
 

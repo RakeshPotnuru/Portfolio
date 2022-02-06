@@ -1,8 +1,9 @@
-import React, { useEffect, useCallback, useState } from 'react';
+import React, { useEffect, useCallback, useState, Fragment } from 'react';
 import axios from 'axios';
 import Markdown from 'markdown-to-jsx';
 import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import { BackToTop, ErrorModal } from '../../../common/components/UIElements';
 import { LoadingSpinner } from '../../../common/components/UIElements/loadingAnimations';
@@ -37,7 +38,28 @@ const ProjectItem = () => {
   }, [fetchData]);
 
   return (
-    <>
+    <Fragment>
+      <Helmet>
+        <title>{repoName} | itsrakesh</title>
+        <meta property="og:title" content={repoName} />
+        <meta
+          property="og:description"
+          content={`See my ${repoName} project`}
+        />
+        <meta
+          property="og:image"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/projects__og_r2hbQSeQy0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644157173960"
+        />
+        <meta property="twitter:title" content={repoName} />
+        <meta
+          property="twitter:description"
+          content={`See my ${repoName} project`}
+        />
+        <meta
+          property="twitter:image"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/projects__og_r2hbQSeQy0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644157173960"
+        />
+      </Helmet>
       <ErrorModal
         show={show}
         onHide={() => setShow(false)}
@@ -49,7 +71,11 @@ const ProjectItem = () => {
         <em>
           <span style={{ color: 'red' }}>*</span> This page is the README file
           of{' '}
-          <a href={`https://github.com/RakeshPotnuru/${repoName}`}>
+          <a
+            href={`https://github.com/RakeshPotnuru/${repoName}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {repoName}
           </a>{' '}
           Github repository.
@@ -62,7 +88,7 @@ const ProjectItem = () => {
         )}
         <BackToTop />
       </Container>
-    </>
+    </Fragment>
   );
 };
 

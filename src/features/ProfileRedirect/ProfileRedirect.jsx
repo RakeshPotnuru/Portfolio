@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import useHttpHook from '../../common/hooks/http-hook';
 import { ErrorModal } from '../../common/components/UIElements';
@@ -26,7 +27,48 @@ const ProfileRedirect = () => {
   }, [sendRequest, profile]);
 
   return (
-    <>
+    <Fragment>
+      <Helmet>
+        <title>
+          {profileLink ? `${profile} | itsrakesh` : 'Profile Not Found'}
+        </title>
+        <meta
+          property="og:title"
+          content={profileLink ? profile : 'Profile Not Found'}
+        />
+        <meta
+          property="og:description"
+          content={
+            profileLink ? `Follow me on ${profile}` : 'Profile Not Found'
+          }
+        />
+        <meta
+          property="og:image"
+          content={
+            profileLink
+              ? 'https://ik.imagekit.io/itsrakesh/Portfolio/profiles__og_8pHrPNnPsNUr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644159089673'
+              : 'https://ik.imagekit.io/itsrakesh/Portfolio/404__og_5VtpVJDVMx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644160421004'
+          }
+        />
+        <meta
+          property="twitter:title"
+          content={profileLink ? profile : 'Profile Not Found'}
+        />
+        <meta
+          property="twitter:description"
+          content={
+            profileLink ? `Follow me on ${profile}` : 'Profile Not Found'
+          }
+        />
+        <meta
+          property="twitter:image"
+          content={
+            profileLink
+              ? 'https://ik.imagekit.io/itsrakesh/Portfolio/profiles__og_8pHrPNnPsNUr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644159089673'
+              : 'https://ik.imagekit.io/itsrakesh/Portfolio/404__og_5VtpVJDVMx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644160421004'
+          }
+        />
+      </Helmet>
       <ErrorModal show={show} error={error} />
       <div className="profile-redirect">
         {isLoading && (
@@ -41,7 +83,7 @@ const ProfileRedirect = () => {
           </p>
         )}
       </div>
-    </>
+    </Fragment>
   );
 };
 

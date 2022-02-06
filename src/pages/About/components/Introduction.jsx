@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { FaTwitter, FaMedium, FaGithub } from 'react-icons/all';
 
 import { CustomButton } from '../../../common/components/UIElements';
-import { Avatar } from '../../../assets/images';
 
 import './Introduction.scss';
 
@@ -16,7 +15,11 @@ const Introduction = () => {
           <Row>
             <Col sm>
               <div className="introduction__img">
-                <img src={Avatar} alt="its rakesh" />
+                <img
+                  src="https://ik.imagekit.io/itsrakesh/Portfolio/avatar_3PaiLNQSnTE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644134493976"
+                  alt="its rakesh"
+                  loading="lazy"
+                />
               </div>
             </Col>
             <Col className="introduction__short mt-4" sm>
