@@ -2,6 +2,9 @@ import React, { Fragment } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import ReactDOM from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import './Profiles.scss';
 
@@ -48,6 +51,7 @@ const Profiles = () => {
             </p>
             <div className="profiles__container">
               <ProfileCard name="Twitter" />
+              const element = <FontAwesomeIcon icon={faTwitter} />
               <ProfileCard name="Showwcase" />
               <ProfileCard name="LinkedIn" />
               <ProfileCard name="Github" />
