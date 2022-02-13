@@ -36,6 +36,14 @@ footer {
       color: darken($text-color-light, 15%);
     }
   }
+  .divider {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $color-secondary-3;
+    margin: 1rem 0;
+  }
 }
 
 .copyright {

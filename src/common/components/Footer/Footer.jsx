@@ -63,7 +63,7 @@ const Footer = () => {
             </Link>
           </Col>
         </Row>
-        <hr />
+        <span className="divider"></span>
         <Row className="extras">
           <Col sm>
             <Stack>
