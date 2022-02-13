@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>itsrakesh</title>
+        <title>its rakesh</title>
         <meta
           name="description"
           content="Hi! I'm Rakesh - a web developer, technical writer and a passionate learner. I love participating in hackathons, contributing to open source projects and find pleasure in helping folks around me."

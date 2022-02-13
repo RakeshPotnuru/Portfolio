@@ -1,14 +1,23 @@
-import React, { useState } from 'react';
-import { Col, Container, Row, Button, Collapse } from 'react-bootstrap';
+import React from 'react';
+import {
+  Col,
+  Container,
+  Row,
+  Button
+  // Collapse
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { AiOutlineMail, IoIosArrowDropdownCircle } from 'react-icons/all';
+import {
+  AiOutlineMail
+  // IoIosArrowDropdownCircle
+} from 'react-icons/all';
 
-import { CustomButton } from '../../../common/components/UIElements';
-import { Upwork, PeoplePerHour, Freelancer } from '../../../assets/images';
+// import { CustomButton } from '../../../common/components/UIElements';
+// import { Upwork, PeoplePerHour, Freelancer } from '../../../assets/images';
 import './CTA.scss';
 
 const CTA = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   return (
     <Container>
@@ -45,7 +54,7 @@ const CTA = () => {
             </Col>
           </Row>
         </div>
-        <h1 style={{ textAlign: 'center' }}>Or</h1>
+        {/* <h1 style={{ textAlign: 'center' }}>Or</h1>
         <div className="cta__freelance-links">
           <h2>Hire me on</h2>
           <Row className="mt-5">
@@ -108,7 +117,7 @@ const CTA = () => {
               </ul>
             </div>
           </Collapse>
-        </div>
+        </div> */}
       </div>
     </Container>
   );

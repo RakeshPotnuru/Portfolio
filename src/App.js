@@ -26,6 +26,8 @@ const Profiles = lazy(() => import('./pages/Profiles/Profiles'));
 const AllProjects = lazy(() => import('./pages/Work/projects/AllProjects'));
 const ProjectItem = lazy(() => import('./pages/Work/projects/ProjectItem'));
 
+const PrivacyPolicy = lazy(() => import('./pages/Misc/PrivacyPolicy'));
+
 const App = () => {
   return (
     <React.Fragment>
@@ -45,6 +47,8 @@ const App = () => {
 
             <Route path="/profiles/:profile" element={<ProfileRedirect />} />
             <Route path="/profiles" element={<Profiles />} />
+
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<Navigate replace to="/404" />} />

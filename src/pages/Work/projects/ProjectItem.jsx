@@ -5,7 +5,11 @@ import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import { BackToTop, ErrorModal } from '../../../common/components/UIElements';
+import {
+  BackToTop,
+  ErrorModal,
+  Video
+} from '../../../common/components/UIElements';
 import { LoadingSpinner } from '../../../common/components/UIElements/loadingAnimations';
 import './ProjectItem.scss';
 
@@ -17,7 +21,7 @@ const ProjectItem = () => {
 
   const { repoName } = useParams();
 
-  const fetchData = useCallback(async () => {
+  const fetchRepo = useCallback(async () => {
     setIsLoading(true);
     try {
       const data = await axios.get(
@@ -34,8 +38,8 @@ const ProjectItem = () => {
   }, [setReadme, repoName]);
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+    fetchRepo();
+  }, [fetchRepo]);
 
   return (
     <Fragment>
@@ -68,25 +72,30 @@ const ProjectItem = () => {
         error={error}
       />
       <Container>
-        <h2>Project Details</h2>
-        <em>
-          <span style={{ color: 'red' }}>*</span> This page is the README file
-          of{' '}
-          <a
-            href={`https://github.com/RakeshPotnuru/${repoName}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {repoName}
-          </a>{' '}
-          Github repository.
-        </em>
-        {isLoading && <LoadingSpinner />}
-        {!isLoading && (
-          <div className="project-item">
-            <Markdown children={readme} />
+        <div className="project-item">
+          <h2>Project Details</h2>
+          <div className="project-item__video">
+            <Video repoName={repoName} />
           </div>
-        )}
+          <em>
+            <span style={{ color: 'red' }}>*</span> This page is the README file
+            of{' '}
+            <a
+              href={`https://github.com/RakeshPotnuru/${repoName}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {repoName}
+            </a>{' '}
+            Github repository.
+          </em>
+          {isLoading && <LoadingSpinner />}
+          {!isLoading && (
+            <div className="project-item__details">
+              <Markdown children={readme} />
+            </div>
+          )}
+        </div>
         <BackToTop />
       </Container>
     </Fragment>

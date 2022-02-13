@@ -1,44 +1,51 @@
 @use '../../../common/util/mixins';
 @import '../../../common/util/variables';
 
-em a {
-  color: $color-primary-1;
-
-  &:hover,
-  &:focus {
-    color: lighten($color-primary-1, 10%);
-  }
-}
 .project-item {
-  margin: 5%;
-
-  img {
-    width: 100%;
-    height: auto;
+  &__video {
+    margin: 5%;
   }
 
-  @include mixins.anchor($color-primary-1);
+  em a {
+    color: $color-primary-1;
 
-  pre {
-    background: $color-secondary-2;
-    border-radius: $border-radius-1;
-    padding: 1rem 2rem;
+    &:hover,
+    &:focus {
+      color: lighten($color-primary-1, 10%);
+    }
+  }
+
+  &__details {
+    margin: 5%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @include mixins.anchor($color-primary-1);
+
+    pre {
+      background: $color-secondary-2;
+      border-radius: $border-radius-1;
+      padding: 1rem 2rem;
+
+      code {
+        color: $text-color-light;
+      }
+
+      &::-webkit-scrollbar {
+        height: 0.5rem;
+      }
+      @include mixins.scrollbar($color-secondary-1);
+    }
 
     code {
-      color: $text-color-light;
+      color: $color-primary-7;
+      background: $color-secondary-2;
+      padding: 0.2rem 0.5rem;
+      border-radius: $border-radius-1;
+      @include mixins.scrollbar($color-secondary-1);
     }
-
-    &::-webkit-scrollbar {
-      height: 0.5rem;
-    }
-    @include mixins.scrollbar($color-secondary-1);
-  }
-
-  code {
-    color: $color-primary-7;
-    background: $color-secondary-2;
-    padding: 0.2rem 0.5rem;
-    border-radius: $border-radius-1;
-    @include mixins.scrollbar($color-secondary-1);
   }
 }

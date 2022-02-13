@@ -1,3 +1,4 @@
+@use '../../util/mixins';
 @import '../../util/variables';
 
 #footer {
@@ -10,6 +11,11 @@ footer {
 
   @media screen and (max-width: $screen-xss) {
     padding: 4rem 1rem;
+  }
+
+  .extras {
+    @include mixins.anchor($text-color-light);
+    color: darken($text-color-light, 25%);
   }
 
   .visits {
@@ -30,26 +36,14 @@ footer {
       color: darken($text-color-light, 15%);
     }
   }
+}
 
-  button {
-    white-space: nowrap;
-  }
-
-  button {
-    @media screen and (max-width: $screen-xs) {
-      margin: 5% auto;
-    }
-  }
-
-  @media screen and (max-width: $screen-sm) {
-    text-align: center;
-    .feedback {
-      margin: 5% auto;
-    }
-  }
-
-  .end-text {
-    text-align: center;
-    margin-bottom: 0;
+.copyright {
+  background: lighten($color-secondary-6, 10%);
+  padding: 2% 7%;
+  text-align: center;
+  color: darken($text-color-light, 25%);
+  p {
+    color: darken($text-color-light, 25%);
   }
 }

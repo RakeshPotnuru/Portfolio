@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Row, Spinner, OverlayTrigger, Tooltip } from 'react-bootstrap';
-
 import {
-  FaTwitter,
-  FaMedium,
-  FaLinkedin,
-  FaGithub,
-  MdReport,
-  RiFeedbackFill
-} from 'react-icons/all';
+  Col,
+  Row,
+  Spinner,
+  OverlayTrigger,
+  Tooltip,
+  Stack
+} from 'react-bootstrap';
+
+import { FaTwitter, FaMedium, FaLinkedin, FaGithub } from 'react-icons/all';
 import { Link } from 'react-router-dom';
-import { CustomButton } from '../UIElements';
 import useHttpClient from '../../hooks/http-hook';
 import './Footer.scss';
 
@@ -49,7 +48,7 @@ const Footer = () => {
               </OverlayTrigger>
             </h6>
           </Col>
-          <Col sm>
+          <Col className="p-2" sm>
             <Link to="/profiles/twitter">
               <FaTwitter className="social-icon" />
             </Link>
@@ -63,35 +62,38 @@ const Footer = () => {
               <FaLinkedin className="social-icon" />
             </Link>
           </Col>
-          <Col sm>
-            <Row className="m-2">
-              <Col>
-                <a
-                  href="https://forms.gle/2mtF1kybEQQQVrRdA"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <CustomButton variant="warning">
-                    <MdReport /> Report
-                  </CustomButton>
-                </a>
-              </Col>
-              <Col>
-                <a
-                  href="https://forms.gle/PbcqrhTEWQtKxE6g7"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <CustomButton variant="primary">
-                    <RiFeedbackFill /> Feedback
-                  </CustomButton>
-                </a>
-              </Col>
-            </Row>
-          </Col>
         </Row>
-        <h6 className="end-text mt-2">Made with 💖 by Me!</h6>
+        <hr />
+        <Row className="extras">
+          <Col sm>
+            <Stack>
+              <a
+                href="https://forms.gle/2mtF1kybEQQQVrRdA"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Report
+              </a>
+              <a
+                href="https://forms.gle/PbcqrhTEWQtKxE6g7"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Feedback
+              </a>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+            </Stack>
+          </Col>
+          {/* <Col sm>
+            <Link to="/stats">Stats</Link>
+          </Col> */}
+        </Row>
       </footer>
+      <Stack className="copyright" direction="horizontal" gap={5}>
+        <p> &copy; {new Date().getFullYear()} itsrakesh</p>
+        <p className="ms-auto">Made with 💖 by Me!</p>
+        <p>v1.0.0</p>
+      </Stack>
     </div>
   );
 };

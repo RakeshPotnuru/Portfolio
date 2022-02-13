@@ -5,3 +5,4 @@ export { default as CustomButton } from '../UIElements/CustomButton';
 export { default as AnimatedCounter } from '../UIElements/AnimatedCounter';
 export { default as BlogCard } from '../UIElements/BlogCard';
 export { default as ErrorModal } from '../UIElements/ErrorModal';
+export { default as Video } from '../UIElements/Video';
