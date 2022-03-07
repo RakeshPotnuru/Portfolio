@@ -91,7 +91,7 @@ const Introduction = () => {
                 Rakesh Potnuru
               </a>
               , a Full Stack Developer, Technical Writer, and a passionate
-              learner. I am pursuing B.Tech with Computer Science and
+              learner. I am pursuing B.Tech in Computer Science and
               Engineering at{' '}
               <a
                 href="https://www.lpu.in"

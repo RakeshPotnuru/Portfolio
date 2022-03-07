@@ -36,7 +36,7 @@ const Home = () => {
         />
         <meta
           property="og:image"
-          content="https://ik.imagekit.io/itsrakesh/Portfolio/its_rakesh_nz6h1OrqA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644141837903"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/its_rakesh_5zlx0DELg.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646652255362"
         />
         <meta property="twitter:title" content="Rakesh Potnuru" />
         <meta
@@ -45,7 +45,7 @@ const Home = () => {
         />
         <meta
           property="twitter:image"
-          content="https://ik.imagekit.io/itsrakesh/Portfolio/its_rakesh_nz6h1OrqA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644141837903"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/its_rakesh_5zlx0DELg.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646652255362"
         />
       </Helmet>
       <Hero />

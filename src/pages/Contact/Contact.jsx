@@ -20,7 +20,7 @@ const Contact = () => {
         />
         <meta
           property="og:image"
-          content="https://ik.imagekit.io/itsrakesh/Portfolio/contact_og_3g-94R3TXE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644156573585"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/contact_og_kQt7MdqAH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646652254157"
         />
         <meta property="twitter:title" content="Get in touch with Rakesh" />
         <meta
@@ -29,7 +29,7 @@ const Contact = () => {
         />
         <meta
           property="twitter:image"
-          content="https://ik.imagekit.io/itsrakesh/Portfolio/contact_og_3g-94R3TXE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644156573585"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/contact_og_kQt7MdqAH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646652254157"
         />
       </Helmet>
       <ContactForm />

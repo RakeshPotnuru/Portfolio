@@ -25,13 +25,13 @@ const Profiles = () => {
         <meta property="og:description" content="Find me on internet." />
         <meta
           property="og:image"
-          content="https://ik.imagekit.io/itsrakesh/Portfolio/profiles__og_8pHrPNnPsNUr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644159089673"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/profiles__og_PSyYregug.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646652254785"
         />
         <meta property="twitter:title" content="Rakesh's Profiles" />
         <meta property="twitter:description" content="Find me on internet." />
         <meta
           property="twitter:image"
-          content="https://ik.imagekit.io/itsrakesh/Portfolio/profiles__og_8pHrPNnPsNUr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644159089673"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/profiles__og_PSyYregug.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646652254785"
         />
       </Helmet>
       <div id="profiles">

@@ -36,13 +36,13 @@ const AllProjects = () => {
         <meta property="og:description" content="See my projects" />
         <meta
           property="og:image"
-          content="https://ik.imagekit.io/itsrakesh/Portfolio/projects__og_r2hbQSeQy0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644157173960"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/projects__og_fLEcj2Dqve4O.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646652254785"
         />
         <meta property="twitter:title" content="Rakesh's Projects" />
         <meta property="twitter:description" content="See my projects" />
         <meta
           property="twitter:image"
-          content="https://ik.imagekit.io/itsrakesh/Portfolio/projects__og_r2hbQSeQy0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644157173960"
+          content="https://ik.imagekit.io/itsrakesh/Portfolio/projects__og_fLEcj2Dqve4O.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646652254785"
         />
       </Helmet>
       <ErrorModal
