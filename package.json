@@ -7,9 +7,6 @@
     "url": "https://github.com/RakeshPotnuru/Portfolio"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "animejs": "^3.2.1",
     "axios": "^0.25.0",
     "bootstrap": "^5.1.3",
