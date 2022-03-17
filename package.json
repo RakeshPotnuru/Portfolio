@@ -29,7 +29,7 @@
     "react-typist": "^2.0.5",
     "react-visibility-sensor": "^5.1.1",
     "web-vitals": "^1.0.1",
-    "workbox-cli": "^6.4.2"
+    "workbox-cli": "^6.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
