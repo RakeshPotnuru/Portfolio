@@ -28,7 +28,7 @@ const AllProjects = lazy(() => import('./pages/Work/projects/AllProjects'));
 const ProjectItem = lazy(() => import('./pages/Work/projects/ProjectItem'));
 
 const PrivacyPolicy = lazy(() => import('./pages/Misc/PrivacyPolicy'));
-const Stats = lazy(() => import('./pages/Misc/Stats'));
+// const Stats = lazy(() => import('./pages/Misc/Stats'));
 
 const App = () => {
   return (
