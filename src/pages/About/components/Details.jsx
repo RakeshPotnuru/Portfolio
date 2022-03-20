@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FiExternalLink } from 'react-icons/fi';
+// import { FiExternalLink } from 'react-icons/fi';
 
 import techData from './techData';
-import {
-  AnimatedCounter,
-  CustomButton
-} from '../../../common/components/UIElements';
+// import {
+//   AnimatedCounter,
+//   CustomButton
+// } from '../../../common/components/UIElements';
 import './Details.scss';
 import { Link } from 'react-router-dom';
 
