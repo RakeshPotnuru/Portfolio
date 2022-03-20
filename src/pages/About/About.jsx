@@ -6,7 +6,8 @@ import {
   BlogsHistory,
   ContributionsGraph,
   Introduction,
-  Details
+  Details,
+  Experience
 } from './components';
 
 const About = () => {
@@ -31,6 +32,7 @@ const About = () => {
       <Introduction />
       <ContributionsGraph />
       <BlogsHistory />
+      <Experience />
       <Details />
       <BackToTop />
     </React.Fragment>

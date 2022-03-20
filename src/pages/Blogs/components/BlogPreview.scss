@@ -5,10 +5,7 @@
   width: 100%;
   min-height: 15rem;
   max-height: 15rem;
-  background-position: right;
-  background-size: cover;
   overflow-y: scroll;
-  background: $color-secondary-6;
 
   @include mixins.scrollbar(lighten($color-secondary-2, 5%));
 

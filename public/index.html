@@ -99,7 +99,7 @@
   <div id="root"></div>
 
   <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
     (function () {
@@ -111,8 +111,29 @@
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
     })();
-  </script>
+  </script> -->
   <!--End of Tawk.to Script-->
+
+  <!-- Chatwoot widget script -->
+  <script>
+    (function (d, t) {
+      var BASE_URL = "https://app.chatwoot.com";
+      var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      g.src = BASE_URL + "/packs/js/sdk.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g, s);
+      g.onload = function () {
+        window.chatwootSDK.run({
+          websiteToken: '5uMnPNKRPmc7gjJubD922VZy',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document, "script");
+  </script>
+  <!-- End of Chatwoot widget Script -->
+
 </body>
 
 </html>

@@ -7,18 +7,19 @@ import './BlogsHistory.scss';
 const BlogsHistory = () => {
   const data = [
     {
-      end: 15,
+      end: 20,
       field: 'Blogs'
     },
     {
-      end: 40000,
+      end: 43000,
       field: 'Views'
     },
     {
-      end: 700,
+      end: 800,
       field: 'Impressions'
     }
   ];
+
   return (
     <Container>
       <div className="blogs-history">
