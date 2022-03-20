@@ -50,10 +50,10 @@ const techData = [
     techName: 'JQUERY',
     imageUrl: prefix + 'jquery/jquery-original.svg'
   },
-  {
-    techName: 'MYSQL',
-    imageUrl: prefix + 'mysql/mysql-original.svg'
-  },
+  // {
+  //   techName: 'MYSQL',
+  //   imageUrl: prefix + 'mysql/mysql-original.svg'
+  // },
   {
     techName: 'BOOTSTRAP',
     imageUrl: prefix + 'bootstrap/bootstrap-original.svg'

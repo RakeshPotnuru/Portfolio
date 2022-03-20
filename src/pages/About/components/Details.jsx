@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
-import VisibilitySensor from 'react-visibility-sensor';
+import { Container, Row, Col } from 'react-bootstrap';
 import { FiExternalLink } from 'react-icons/fi';
 
 import techData from './techData';
@@ -55,42 +54,15 @@ const Details = () => {
               <Col sm>
                 <h4>Web Development</h4>
               </Col>
-              <Col sm>
-                <VisibilitySensor>
-                  {({ isVisible }) =>
-                    isVisible ? (
-                      <ProgressBar now={75} label={`${75}%`} />
-                    ) : (
-                      <ProgressBar now={0} />
-                    )
-                  }
-                </VisibilitySensor>
-              </Col>
             </Row>
             <Row>
               <Col sm>
                 <h4>Technical Writing</h4>
               </Col>
-              <Col sm>
-                <VisibilitySensor>
-                  {({ isVisible }) =>
-                    isVisible ? (
-                      <ProgressBar now={65} label={`${65}%`} />
-                    ) : (
-                      <ProgressBar now={0} />
-                    )
-                  }
-                </VisibilitySensor>
-              </Col>
             </Row>
-            <em>
-              <span style={{ color: 'red' }}>* </span>Percentage represents my
-              level of proficiency in that skill. Remaining percentage shows how
-              much I need to improve or learn.
-            </em>
           </div>
         </div>
-        <div className="details__achievements mt-5">
+        {/* <div className="details__achievements mt-5">
           <h2 className="details__achievements__title">Achievements</h2>
           <div className="details__achievements__container">
             <div className="details__achievements__container__achievement">
@@ -132,12 +104,11 @@ const Details = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="support">
           <h2>Want to support me?</h2>
           <p>
-            I don't ask you to "buy me a coffee" instead follow me on{' '}
-            <Link to="/profiles">socials</Link> :).
+            Follow me on <Link to="/profiles">socials</Link> :).
           </p>
         </div>
       </div>

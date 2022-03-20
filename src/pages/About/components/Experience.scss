@@ -1,0 +1,54 @@
+@use '../../../common/util/mixins';
+@import '../../../common/util/variables';
+
+.experience {
+  margin: 5%;
+
+  h2 {
+    color: lighten($color-primary-5, 30%);
+  }
+
+  .line {
+    border-left: 6px solid $color-primary-5;
+    height: 70px;
+    margin-left: 3%;
+
+    @media screen and (max-width: $screen-sm) {
+      margin-left: 7%;
+    }
+  }
+
+  &__content {
+    margin: 2%;
+
+    &__item {
+      &__img {
+        max-width: 5rem;
+        max-height: 5rem;
+
+        img {
+          width: 100%;
+          height: auto;
+          //   border-radius: 50%;
+        }
+      }
+
+      &__details {
+        .type {
+          padding: 0.15rem 0.5rem;
+          border-radius: 0.5rem;
+          border: 2px solid darken(#5463ff, 30%);
+          background-color: #5462ff60;
+
+          span {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(51, 255, 0);
+            display: inline-block;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

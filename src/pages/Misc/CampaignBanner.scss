@@ -1,0 +1,29 @@
+@use '../../common/util/mixins';
+@import '../../common/util/variables';
+
+.banner {
+  @include mixins.anchor($text-color-light);
+
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+
+  p {
+    margin: 0;
+    color: $text-color-light;
+    a {
+      text-decoration: underline;
+    }
+  }
+}

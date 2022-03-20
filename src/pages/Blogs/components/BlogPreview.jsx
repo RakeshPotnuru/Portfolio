@@ -15,7 +15,10 @@ const BlogPreview = (props) => {
   return (
     <div
       style={{
-        backgroundImage: `linear-gradient(328deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 75%), url(${props.imgUrl})`
+        backgroundImage: `linear-gradient(328deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 75%), url(${props.imgUrl})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'right'
       }}
       className="blog-preview"
     >
