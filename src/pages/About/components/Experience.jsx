@@ -16,7 +16,7 @@ const ExperienceItem = (props) => {
         </div>
         <div className="experience__content__item__details mt-3">
           <h3>{props.company}</h3>
-          <h5>{props.position}</h5>
+          <h6>{props.position}</h6>
           <span className="type">
             <span /> {props.type}
           </span>

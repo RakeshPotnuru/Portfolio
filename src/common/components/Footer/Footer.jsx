@@ -17,17 +17,17 @@ const Footer = () => {
   const [visits, setVisits] = useState(0);
   const { isLoading, error, sendRequest } = useHttpClient();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const responseData = await sendRequest(
-          `https://api.countapi.xyz/hit/itsrakesh.co/${process.env.REACT_APP_COUNTAPI_KEY}`
-        );
-        setVisits(responseData.value);
-      } catch (err) {}
-    };
-    fetchData();
-  }, [sendRequest]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const responseData = await sendRequest(
+  //         `https://api.countapi.xyz/hit/itsrakesh.co/${process.env.REACT_APP_COUNTAPI_KEY}`
+  //       );
+  //       setVisits(responseData.value);
+  //     } catch (err) {}
+  //   };
+  //   fetchData();
+  // }, [sendRequest]);
 
   return (
     <div id="footer">
@@ -84,9 +84,9 @@ const Footer = () => {
               <Link to="/privacy-policy">Privacy Policy</Link>
             </Stack>
           </Col>
-          {/* <Col sm>
+          <Col sm>
             <Link to="/stats">Stats</Link>
-          </Col> */}
+          </Col>
         </Row>
       </footer>
       <Stack className="copyright" direction="horizontal" gap={5}>
