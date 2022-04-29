@@ -8,7 +8,7 @@ const CampaignBanner = () => {
   return (
     <div className="banner">
       <p>
-        Looking for a freelancer?{' '}
+        Open to opportunities{' '}
         <Link to="/contact">
           Contact Me <AiOutlineArrowRight />
         </Link>
