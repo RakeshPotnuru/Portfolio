@@ -28,7 +28,7 @@ const AllProjects = lazy(() => import('./pages/Work/projects/AllProjects'));
 const ProjectItem = lazy(() => import('./pages/Work/projects/ProjectItem'));
 
 const PrivacyPolicy = lazy(() => import('./pages/Misc/PrivacyPolicy'));
-// const Stats = lazy(() => import('./pages/Misc/Stats'));
+const Stats = lazy(() => import('./pages/Misc/Stats'));
 
 const App = () => {
   return (
@@ -52,7 +52,7 @@ const App = () => {
             <Route path="/profiles" element={<Profiles />} />
 
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            {/* <Route path="/stats" element={<Stats />} /> */}
+            <Route path="/stats" element={<Stats />} />
 
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<Navigate replace to="/404" />} />
