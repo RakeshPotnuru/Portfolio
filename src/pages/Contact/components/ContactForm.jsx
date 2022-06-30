@@ -9,6 +9,7 @@ import {
   Modal,
   Stack
 } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { Calendly } from '.';
 
 import { CustomButton } from '../../../common/components/UIElements';
@@ -169,6 +170,10 @@ const ContactForm = () => {
         <Container>
           <div className="contact-form">
             <h1>I'd love to hear from you</h1>
+            <p>
+              Just a quick chat? - DM me on Twitter{' '}
+              <Link to={'/profiles/twitter'}>@rakesh_at_tweet</Link>
+            </p>
             <Row className="mt-5">
               <Col className="mt-2" sm>
                 <Stack gap={5}>

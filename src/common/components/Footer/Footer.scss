@@ -16,6 +16,10 @@ footer {
   .extras {
     @include mixins.anchor($text-color-light);
     color: darken($text-color-light, 25%);
+
+    a {
+      width: max-content;
+    }
   }
 
   .visits {

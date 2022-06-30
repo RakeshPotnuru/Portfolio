@@ -29,7 +29,7 @@ const Details = () => {
       <div className="details">
         <div className="details__techs">
           <h2 className="details__techs__title">
-            Tools, Languages & Frameworks/Libraries
+            Tools, Languages &amp; Frameworks/Libraries
           </h2>
           <div className="details__techs__container">
             <Row className="mt-5">

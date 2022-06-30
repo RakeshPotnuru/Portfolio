@@ -1,3 +1,4 @@
+@use '../../../common/util/mixins';
 @import '../../../common/util/variables';
 
 #contact-form {
@@ -9,6 +10,11 @@
   margin: auto 5%;
   padding-top: 12%;
   text-align: center;
+
+  p {
+    color: $text-color-light;
+    @include mixins.anchor($color-primary-1);
+  }
 
   label {
     color: $color-secondary-4;

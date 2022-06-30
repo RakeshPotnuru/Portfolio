@@ -1,6 +1,6 @@
 @import '../../../common/util/variables';
 
-.projects {
+.blogs {
   margin: 5%;
 
   &__header {
@@ -17,5 +17,9 @@
         background: lighten($color-primary-1, 10%);
       }
     }
+  }
+
+  &__container {
+    margin: auto 5% 5% 5%;
   }
 }

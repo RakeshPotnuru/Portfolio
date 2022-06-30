@@ -2,12 +2,13 @@ import React, { useEffect, useState, Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { BackToTop } from '../../common/components/UIElements';
-import { Projects } from './components';
+import { Blogs, Projects } from './components';
 import useHttpClient from '../../common/hooks/http-hook';
 
 const Work = () => {
   const { isLoading, error, sendRequest, show } = useHttpClient();
   const [projects, setProjects] = useState([]);
+  const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,6 +17,18 @@ const Work = () => {
           `${process.env.REACT_APP_BACKEND_URL}/project/projects`
         );
         setProjects(responseData);
+      } catch (err) {}
+    };
+    fetchData();
+  }, [sendRequest]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const responseData = await sendRequest(
+          `${process.env.REACT_APP_BACKEND_URL}/blog/blogs/1`
+        );
+        setBlogs(responseData);
       } catch (err) {}
     };
     fetchData();
@@ -45,6 +58,7 @@ const Work = () => {
         error={error}
         show={show}
       />
+      <Blogs blogs={blogs} isLoading={isLoading} error={error} />
       <BackToTop />
     </Fragment>
   );

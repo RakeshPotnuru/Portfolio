@@ -1,3 +1,4 @@
+@use '../../../common/util/mixins';
 @import '../../../common/util/variables';
 
 @mixin btn($bg) {
@@ -65,12 +66,7 @@
   }
 
   &__brief {
-    a {
-      color: $color-primary-1;
-      &:hover {
-        color: darken($color-primary-1, 15%);
-      }
-    }
+    @include mixins.anchor($color-primary-1);
   }
 
   @media screen and (max-width: $screen-xs) {

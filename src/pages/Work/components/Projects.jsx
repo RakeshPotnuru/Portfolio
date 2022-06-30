@@ -33,7 +33,7 @@ const Projects = (props) => {
                 props.projects &&
                 props.projects.slice(0, 3).map((project, i) => {
                   return (
-                    <Col key={i} className="mt-5" sm={6} md={6}>
+                    <Col key={i} className="mt-5" sm={6} md={4}>
                       <ProjectCard
                         title={project.title}
                         image={project.image}

@@ -7,9 +7,9 @@ import {
   Tooltip,
   Stack
 } from 'react-bootstrap';
-
 import { FaTwitter, FaMedium, FaLinkedin, FaGithub } from 'react-icons/all';
 import { Link } from 'react-router-dom';
+
 import useHttpClient from '../../hooks/http-hook';
 import './Footer.scss';
 
@@ -90,7 +90,10 @@ const Footer = () => {
         </Row>
       </footer>
       <Stack className="copyright" direction="horizontal" gap={5}>
-        <p> &copy; {new Date().getFullYear()} itsrakesh</p>
+        <p>
+          {' '}
+          &copy; {new Date().getFullYear()} itsrakesh. All rights reserved.
+        </p>
         <p className="ms-auto">Made with 💖 by Me!</p>
         <p>v1.0.0</p>
       </Stack>
