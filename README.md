@@ -1,5 +1,9 @@
 # Portfolio Website
 
+> **Warning**
+>
+> Please change script tags (Google analytics, clarity traking code, chatwoot and schema markup) in `index.html`
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9791dc74-ed3e-40c5-bc3d-0a823a64cebc/deploy-status)](https://app.netlify.com/sites/pensive-jennings-c50ca9/deploys)
 
 Visit - [itsrakesh.co](https://itsrakesh.co)
