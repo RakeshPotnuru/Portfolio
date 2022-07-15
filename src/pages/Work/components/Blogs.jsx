@@ -8,6 +8,7 @@ import {
   CustomButton,
   ErrorModal
 } from '../../../common/components/UIElements';
+import { LoadingBlogCard } from '../../../common/components/UIElements/loadingAnimations';
 
 import './Blogs.scss';
 
