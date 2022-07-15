@@ -49,7 +49,7 @@ const Projects = (props) => {
               <Row>
                 {[...Array(3)].map((_, i) => {
                   return (
-                    <Col key={i} className="mt-5" sm={6} md={6}>
+                    <Col key={i} className="mt-5" sm={6} md={4}>
                       <LoadingProjectCard />
                     </Col>
                   );

@@ -45,6 +45,15 @@ const Blogs = (props) => {
                   </Col>
                 );
               })}
+            {props.isLoading && (
+              <Row>
+                {[...Array(3)].map((_, i) => (
+                  <Col sm={6} md={4} key={i}>
+                    <LoadingBlogCard />
+                  </Col>
+                ))}
+              </Row>
+            )}
           </Row>
         </div>
       </Container>
