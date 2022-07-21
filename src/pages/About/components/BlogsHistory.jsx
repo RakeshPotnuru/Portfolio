@@ -7,15 +7,15 @@ import './BlogsHistory.scss';
 const BlogsHistory = () => {
   const data = [
     {
-      end: 32,
-      field: 'Blogs'
+      end: 34,
+      field: 'Articles'
     },
     {
-      end: 100000,
+      end: 110000,
       field: 'Views'
     },
     {
-      end: 7000,
+      end: 8000,
       field: 'Impressions'
     }
   ];
@@ -23,7 +23,7 @@ const BlogsHistory = () => {
   return (
     <Container>
       <div className="blogs-history">
-        <h2 className="blogs-history__title">Blogs History</h2>
+        <h2 className="blogs-history__title">Articles Stats</h2>
         <div className="blogs-history__card">
           <Row>
             {data.map((item, i) => {

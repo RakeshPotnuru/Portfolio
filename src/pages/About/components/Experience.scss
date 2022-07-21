@@ -22,6 +22,10 @@
     margin: 2%;
 
     &__item {
+      h5 {
+        color: lighten($color-primary-5, 30%);
+      }
+
       &__img {
         max-width: 5rem;
         max-height: 5rem;
