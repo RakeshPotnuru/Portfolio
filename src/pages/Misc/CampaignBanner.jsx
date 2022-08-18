@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 import './CampaignBanner.scss';
@@ -8,10 +7,14 @@ const CampaignBanner = () => {
   return (
     <div className="banner">
       <p>
-        Open to opportunities{' '}
-        <Link to="/contact">
-          Contact Me <AiOutlineArrowRight />
-        </Link>
+        Vote for me in Noonies awards{' '}
+        <a
+          href="https://twitter.com/rakesh_at_tweet/status/1560186559583768576?s=20&t=P-0EAakpBxxEZ6IOX8tDgA"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Click Here <AiOutlineArrowRight />
+        </a>
       </p>
     </div>
   );
