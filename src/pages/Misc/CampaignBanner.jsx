@@ -7,7 +7,7 @@ const CampaignBanner = () => {
   return (
     <div className="banner">
       <p>
-        Vote for me in Noonies awards{' '}
+        Vote for me in the Noonies awards{' '}
         <a
           href="https://twitter.com/rakesh_at_tweet/status/1560186559583768576?s=20&t=P-0EAakpBxxEZ6IOX8tDgA"
           target="_blank"
