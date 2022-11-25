@@ -18,7 +18,13 @@ const ExperienceItem = (props) => {
           <h3>{props.company}</h3>
           <h5>{props.position}</h5>
           <span className="type">
-            <span /> {props.type}
+            <span
+              style={{
+                backgroundColor:
+                  props.endDate === 'Present' ? 'rgb(51, 255, 0)' : '#ff0000'
+              }}
+            />{' '}
+            {props.type}
           </span>
           <p>
             {props.startDate} - {props.endDate}
@@ -78,7 +84,7 @@ const Experience = () => {
               type="Freelancing"
               position="Technical Writer"
               startDate="May 2022"
-              endDate="Present"
+              endDate="Oct 2022"
             />
             <div className="line"></div>
             <ExperienceItem
@@ -105,7 +111,7 @@ const Experience = () => {
               position="Technical Writer"
               type="Volunteering"
               startDate="Mar 2022"
-              endDate="Present"
+              endDate="Oct 2022"
             />
           </div>
         </div>

@@ -6,6 +6,11 @@ const techData = [
     imageUrl: prefix + 'react/react-original.svg'
   },
   {
+    techName: 'NEXT JS',
+    imageUrl: prefix + 'nextjs/nextjs-original.svg',
+    bg: '#fff'
+  },
+  {
     techName: 'NODE JS',
     imageUrl: prefix + 'nodejs/nodejs-original.svg'
   },

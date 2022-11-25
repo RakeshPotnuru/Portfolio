@@ -16,7 +16,12 @@ import Resume from '../../../assets/documents/resume.pdf';
 import 'react-typist/dist/Typist.css';
 import './Hero.scss';
 
-const words = ['web developer', 'technical writer', 'oss contributor'];
+const words = [
+  'web developer',
+  'technical writer',
+  'freelancer',
+  'oss contributor'
+];
 
 const Hero = () => {
   const [count, setCount] = useState(1);

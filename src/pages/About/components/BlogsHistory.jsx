@@ -7,15 +7,15 @@ import './BlogsHistory.scss';
 const BlogsHistory = () => {
   const data = [
     {
-      end: 34,
+      end: 40,
       field: 'Articles'
     },
     {
-      end: 110000,
+      end: 155000,
       field: 'Views'
     },
     {
-      end: 8000,
+      end: 10000,
       field: 'Impressions'
     }
   ];

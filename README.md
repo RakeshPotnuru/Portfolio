@@ -12,7 +12,7 @@ Visit - [itsrakesh.co](https://itsrakesh.co)
 
 Backend Repo - [Here](https://github.com/RakeshPotnuru/Portfolio-Server)
 
-Made with 
+Made with
 
 - ReactJs
 - NodeJs
@@ -24,3 +24,19 @@ Deployed with
 - Heroku
 
 API's used - [Dev](https://developers.forem.com/api)
+
+## Development
+
+- Install dependencies
+
+```bash
+yarn
+```
+
+- Start development server
+
+```bash
+yarn start
+```
+
+> If you are getting "error:0308010C:digital envelope routines::unsupported". Read [this](https://stackoverflow.com/a/69699772/14408933) stackoverflow answer.
