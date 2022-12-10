@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { BsFillArrowDownCircleFill } from 'react-icons/all';
+import { BsFillArrowUpCircleFill } from 'react-icons/all';
 
 import './BackToTop.scss';
 
@@ -32,7 +32,7 @@ const BackToTop = () => {
         className={showBackToTop ? 'back-to-top' : 'hide-back-to-top'}
         onClick={scrollToTop}
       >
-        <BsFillArrowDownCircleFill className="back-to-top__icon" />
+        <BsFillArrowUpCircleFill className="back-to-top__icon" />
       </div>
     </div>
   );

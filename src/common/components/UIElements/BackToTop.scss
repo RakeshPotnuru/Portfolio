@@ -19,7 +19,7 @@
     animation: fadeIn 0.3s ease-in-out;
 
     &:hover {
-      transform: rotate(180deg);
+      opacity: 0.8;
     }
 
     @media screen and (max-width: $screen-sm) {
