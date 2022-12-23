@@ -8,7 +8,7 @@ const CampaignBanner = () => {
   return (
     <div className="banner">
       <p>
-        Open for Collaborations{' '}
+        Open to opportunities{' '}
         <Link to="/contact">
           Contact me <AiOutlineArrowRight />
         </Link>
