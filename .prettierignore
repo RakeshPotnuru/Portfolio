@@ -6,7 +6,6 @@ coverage
 *.html
 
 LICENSE
-README.md
 .editorconfig
 .eslintignore
 .gitattributes
@@ -21,3 +20,4 @@ node_modules/
 public/
 package-lock.json
 yarn.lock
+.dockerignore

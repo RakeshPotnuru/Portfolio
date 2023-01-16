@@ -29,14 +29,27 @@ API's used - [Dev](https://developers.forem.com/api)
 
 - Install dependencies
 
-```bash
-yarn
-```
+  ```bash
+  yarn
+  ```
 
 - Start development server
 
-```bash
-yarn start
-```
+  ```bash
+  yarn start
+  ```
+
+### Or with Docker
+
+- Build the image
+
+  ```bash
+  docker-compose build
+  ```
+
+- Run the docker image
+  ```bash
+  docker-compose up
+  ```
 
 > If you are getting "error:0308010C:digital envelope routines::unsupported". Read [this](https://stackoverflow.com/a/69699772/14408933) stackoverflow answer.
