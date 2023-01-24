@@ -40,7 +40,7 @@ const Content = (props) => {
             <Col className="content__container__details" sm={12} md={6}>
               <div>
                 <h1>
-                  <AnimatedCounter end={50} duration={1} />
+                  <AnimatedCounter end={6} duration={1} />
                   <span style={{ color: '#8ED2A9' }}>+</span>
                 </h1>
                 <h6>Completed projects</h6>
