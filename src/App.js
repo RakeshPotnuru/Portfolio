@@ -26,7 +26,7 @@ const ProfileRedirect = lazy(() =>
 const Profiles = lazy(() => import('./pages/Profiles/Profiles'));
 const AllProjects = lazy(() => import('./pages/Work/projects/AllProjects'));
 const ProjectItem = lazy(() => import('./pages/Work/projects/ProjectItem'));
-
+const Events = lazy(() => import('./pages/Events/Events'));
 const PrivacyPolicy = lazy(() => import('./pages/Misc/PrivacyPolicy'));
 // const Stats = lazy(() => import('./pages/Misc/Stats'));
 
@@ -50,6 +50,8 @@ const App = () => {
 
             <Route path="/profiles/:profile" element={<ProfileRedirect />} />
             <Route path="/profiles" element={<Profiles />} />
+
+            <Route path="/events" element={<Events />} />
 
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             {/* <Route path="/stats" element={<Stats />} /> */}
