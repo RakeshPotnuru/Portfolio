@@ -24,7 +24,7 @@ const Events = () => {
         <iframe
           title="Event subscription form"
           width="100%"
-          src="https://5520117e.sibforms.com/serve/MUIEANoqCqVDlOSA5tbSwot7SSm2JaMg32iJXf4keKFXv2hQfPw1U5gAGp9n6H_DdIuc8VKxJXpPOItu0wGf05IGa8kcYrm3-ZYq61qRNMRH1dCnaaKDNAs0nX8S3PsFT0IIEZ7Jlx3XWhI8KzjGHHGZFDm3EFtC-wbdqLqvIYWxkQEF_MjC8jIitiiErIx7Vg64AanlxBiNz676"
+          src="https://5520117e.sibforms.com/serve/MUIEADNOgxnmpDMFyDAaqbMOoIsOYWug_jgL1BPdYMnvf5SHNPMqmvFbHqLJ1_a0AM-RTTyo76bKoKCDFNEtToYQyV5jGhhaZvmR3T4XMb-zb9JzUtNBP3RH6cOYfHgGvhv26Q-HObPkl9TWuXVUrY7P2hWo9_wFibWtq0kLWzBE5o9baDIqGoarMNZALrJ4tvwfnkvk-JCjhTYB"
           frameBorder="0"
           scrolling="auto"
           allowFullScreen
