@@ -84,7 +84,7 @@ const Introduction = () => {
               Hi there! Thanks for visiting my portfolio.
               <br /> I'm{' '}
               <a
-                href="https://www.linkedin.com/in/rakesh-potnuru-067a8b1b1"
+                href="https://www.linkedin.com/in/potnururakesh/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
