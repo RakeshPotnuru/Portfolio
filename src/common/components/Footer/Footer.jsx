@@ -35,18 +35,24 @@ const Footer = () => {
         <Row>
           <Col sm>
             <h1>Let's Connect</h1>
-            <h6>
-              Visits:{' '}
-              <OverlayTrigger
-                placement="right"
-                overlay={<Tooltip>Times Viewed</Tooltip>}
-              >
-                <span className="visits">
-                  {isLoading ? <Spinner animation="grow" size="sm" /> : visits}
-                  {error && <span>{error}</span>}
-                </span>
-              </OverlayTrigger>
-            </h6>
+            {!isLoading && visits?.lenght > 0 && (
+              <h6>
+                Visits:{' '}
+                <OverlayTrigger
+                  placement="right"
+                  overlay={<Tooltip>Times Viewed</Tooltip>}
+                >
+                  <span className="visits">
+                    {isLoading ? (
+                      <Spinner animation="grow" size="sm" />
+                    ) : (
+                      visits
+                    )}
+                    {error && <span>{error}</span>}
+                  </span>
+                </OverlayTrigger>
+              </h6>
+            )}
           </Col>
           <Col className="p-2" sm>
             <Link to="/profiles/twitter">
@@ -92,7 +98,8 @@ const Footer = () => {
       <Stack className="copyright" direction="horizontal" gap={5}>
         <p>
           {' '}
-          &copy; {new Date().getFullYear()} itsrakesh. All rights reserved.
+          &copy; 2021 - {new Date().getFullYear()} itsrakesh. All rights
+          reserved.
         </p>
         <p className="ms-auto">Made with 💖 by Me!</p>
         <p>v1.1.0</p>
