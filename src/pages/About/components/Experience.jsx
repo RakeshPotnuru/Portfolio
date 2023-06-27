@@ -43,6 +43,24 @@ const Experience = () => {
           <h2>Experience</h2>
           <div className="experience__content">
             <ExperienceItem
+              company="Truffles"
+              companyImgUrl="https://pbs.twimg.com/profile_images/1670836117849948162/JaaNbWaw_400x400.jpg"
+              type="Full Time"
+              position="Frontend Developer"
+              startDate="5 June 2023"
+              endDate="Present"
+            />
+            <div className="line"></div>
+            <ExperienceItem
+              company="Truffles"
+              companyImgUrl="https://pbs.twimg.com/profile_images/1670836117849948162/JaaNbWaw_400x400.jpg"
+              type="Internship"
+              position="Frontend Developer Intern"
+              startDate="3 April 2023"
+              endDate="3 June 2023"
+            />
+            <div className="line"></div>
+            <ExperienceItem
               company="Microsoft Learn"
               companyImgUrl="https://pbs.twimg.com/profile_images/1268202810283225095/RPVzfN-t_400x400.png"
               type="Volunteering"
