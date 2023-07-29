@@ -39,11 +39,11 @@ const Profiles = () => {
           <div className="profiles">
             <h1>My Profiles</h1>
             <h6>You can find me on the internet with url:</h6>
-            <p>https://itsrakesh.co/profiles/&lt;websitename&gt;</p>
+            <p>https://itsrakesh.com/profiles/&lt;websitename&gt;</p>
             <p>
               For example:{' '}
               <Link to="/profiles/stackoverflow">
-                https://itsrakesh.co/profiles/stackoverflow
+                https://itsrakesh.com/profiles/stackoverflow
               </Link>
             </p>
             <div className="profiles__container">

@@ -21,7 +21,7 @@ const Footer = () => {
     const fetchData = async () => {
       try {
         const responseData = await sendRequest(
-          `https://api.countapi.xyz/hit/itsrakesh.co/${process.env.REACT_APP_COUNTAPI_KEY}`
+          `https://api.countapi.xyz/hit/itsrakesh.com/${process.env.REACT_APP_COUNTAPI_KEY}`
         );
         setVisits(responseData.value);
       } catch (err) {}

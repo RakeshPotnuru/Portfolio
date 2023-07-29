@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
         <h1>Privacy Policy for Its Rakesh</h1>
 
         <p>
-          At Its Rakesh, accessible from https://itsrakesh.co, one of our main
+          At Its Rakesh, accessible from https://itsrakesh.com, one of our main
           priorities is the privacy of our visitors. This Privacy Policy
           document contains types of information that is collected and recorded
           by Its Rakesh and how we use it.

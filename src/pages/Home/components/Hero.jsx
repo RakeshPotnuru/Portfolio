@@ -80,7 +80,7 @@ const Hero = () => {
                   </span>
                 </h6>
                 <div className="hero__content__main-btns">
-                  <a href="mailto:rakesh@itsrakesh.co">
+                  <a href="mailto:rakesh@itsrakesh.com">
                     <AnimatedButton>
                       <AiOutlineMail className="main-btn" />
                       &nbsp;Email&nbsp;Me

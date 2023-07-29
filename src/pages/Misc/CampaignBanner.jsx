@@ -8,7 +8,7 @@ const CampaignBanner = () => {
   return (
     <div className="banner">
       <p>
-        Open to opportunities{' '}
+        Update: itsrakesh.co moved to itsrakesh.com{' '}
         <Link to="/contact">
           Contact me <AiOutlineArrowRight />
         </Link>

@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://itsrakesh.co/sitemap.xml
+Sitemap: https://itsrakesh.com/sitemap.xml

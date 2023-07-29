@@ -35,7 +35,7 @@ const CTA = () => {
               <div className="cta__content__buttons">
                 <Row>
                   <Col sm className="text-center">
-                    <a href="mailto:rakesh@itsrakesh.co">
+                    <a href="mailto:rakesh@itsrakesh.com">
                       <Button variant="light" size="lg">
                         <AiOutlineMail />
                         &nbsp;Email&nbsp;Me

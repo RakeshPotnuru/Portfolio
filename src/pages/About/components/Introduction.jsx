@@ -32,9 +32,9 @@ const Introduction = () => {
               </div>
               <div>
                 <h6>Email Me</h6>
-                <a href="mailto:rakesh@itsrakesh.co">
+                <a href="mailto:rakesh@itsrakesh.com">
                   <span className="introduction__short__email">
-                    rakesh@itsrakesh.co
+                    rakesh@itsrakesh.com
                   </span>
                 </a>
               </div>
@@ -91,8 +91,8 @@ const Introduction = () => {
                 Rakesh Potnuru
               </a>
               , a Full Stack Developer, Technical Writer, and a passionate
-              learner. I am pursuing B.Tech in Computer Science and
-              Engineering at{' '}
+              learner. I am pursuing B.Tech in Computer Science and Engineering
+              at{' '}
               <a
                 href="https://www.lpu.in"
                 target="_blank"
