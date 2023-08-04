@@ -5,6 +5,7 @@
 > Please change script tags (Google analytics, tawk and schema markup) in `index.html`
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9791dc74-ed3e-40c5-bc3d-0a823a64cebc/deploy-status)](https://app.netlify.com/sites/itsrakesh/deploys)
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/sq5a.svg)](https://status.itsrakesh.com)
 
 Visit - [itsrakesh.com](https://itsrakesh.com)
 
