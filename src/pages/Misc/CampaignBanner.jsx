@@ -9,7 +9,7 @@ const CampaignBanner = () => {
     <div className="banner">
       <p>
         Support Publish Studio on {' '}
-        <Link to="https://www.producthunt.com/products/publish-studio">Product Hunt</Link>
+        <Link to="https://pbst.link/ph">Product Hunt</Link>
 {/*         <Link to="/contact">
           Contact me <AiOutlineArrowRight />
         </Link> */}
