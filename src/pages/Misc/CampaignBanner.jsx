@@ -8,11 +8,11 @@ const CampaignBanner = () => {
   return (
     <div className="banner">
       <p>
-        Support Publish Studio on {' '}
-        <Link to="https://pbst.link/ph">Product Hunt</Link>
-{/*         <Link to="/contact">
+        Open for Hire {' '}
+{/*         <Link to="https://pbst.link/ph">Product Hunt</Link> */}
+        <Link to="/contact">
           Contact me <AiOutlineArrowRight />
-        </Link> */}
+        </Link>
       </p>
     </div>
   );
